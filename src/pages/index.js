@@ -1,5 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
+import Footer from "../components/global/footer/Footer";
+import Header from "../components/global/navbar/Header";
+import IndexPage from "../components/page/index/IndexPage";
 
 export default function Home() {
   return (
@@ -18,7 +21,10 @@ export default function Home() {
         <link rel="canonical" href="/" />
         <link rel="alternate" href="/" hrefLang="ua" />
       </Head>
-      <p>test</p>
+
+      <Header />
+      <IndexPage />
+      <Footer />
     </>
   );
 }
