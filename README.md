@@ -121,6 +121,7 @@ _branched out from master, and merged back into both master and the next release
 - [React](https://reactjs.org/)
 - [NextJS](https://nextjs.org/)
 - [React Bootstrap](https://react-bootstrap.github.io/)
+- [Font Awesome](https://fontawesome.com/v5/docs/web/use-with/react)
 - [React Countup](https://github.com/glennreyes/react-countup)
 - [React Reveal](https://www.react-reveal.com/)
 - [React Spring](https://react-spring.dev/)
