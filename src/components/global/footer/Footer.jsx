@@ -21,9 +21,11 @@ const Footer = () => {
                 classes.social_link
               }
             >
-              <AiFillInstagram
-                style={{ color: "white", height: 20, width: 20 }}
-              />
+              <a href="https://www.instagram.com/itinder_ua/">
+                <AiFillInstagram
+                  style={{ color: "white", height: 20, width: 20 }}
+                />
+              </a>
             </Col>
             <Col
               lg={1}
@@ -35,7 +37,11 @@ const Footer = () => {
                 classes.social_link
               }
             >
-              <FaLinkedinIn style={{ color: "white", height: 20, width: 20 }} />
+              <a href="https://www.linkedin.com/company/itinder/">
+                <FaLinkedinIn
+                  style={{ color: "white", height: 20, width: 20 }}
+                />
+              </a>
             </Col>
             <Col
               lg={1}
@@ -47,7 +53,9 @@ const Footer = () => {
                 classes.social_link
               }
             >
-              <FaTelegram style={{ color: "white", height: 20, width: 20 }} />
+              <a href="https://t.me/I_Tinder">
+                <FaTelegram style={{ color: "white", height: 20, width: 20 }} />
+              </a>
             </Col>
           </Row>
           <Row>
