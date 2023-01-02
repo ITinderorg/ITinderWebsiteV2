@@ -15,8 +15,11 @@ const Footer = () => {
               lg={1}
               md={1}
               sm={1}
-              className="d-flex justify-content-center align-items-center align-self-center"
-              style={{ height: 80 }}
+              xs={1}
+              className={
+                "d-flex justify-content-center align-items-center align-self-center " +
+                classes.social_link
+              }
             >
               <AiFillInstagram
                 style={{ color: "white", height: 20, width: 20 }}
@@ -26,8 +29,11 @@ const Footer = () => {
               lg={1}
               md={1}
               sm={1}
-              className="d-flex justify-content-center align-items-center"
-              style={{ height: 80 }}
+              xs={1}
+              className={
+                "d-flex justify-content-center align-items-center align-self-center " +
+                classes.social_link
+              }
             >
               <FaLinkedinIn style={{ color: "white", height: 20, width: 20 }} />
             </Col>
@@ -35,8 +41,11 @@ const Footer = () => {
               lg={1}
               md={1}
               sm={1}
-              className="d-flex justify-content-center align-items-center"
-              style={{ height: 80 }}
+              xs={1}
+              className={
+                "d-flex justify-content-center align-items-center align-self-center " +
+                classes.social_link
+              }
             >
               <FaTelegram style={{ color: "white", height: 20, width: 20 }} />
             </Col>

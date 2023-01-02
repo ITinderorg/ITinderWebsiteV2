@@ -20,3 +20,25 @@
 .container_wrapper {
   padding: 0px 120px;
 }
+
+@media (max-width: 570px) {
+  .container_wrapper {
+    padding: 0px 60px;
+  }
+}
+@media (max-width: 450px) {
+  .container_wrapper {
+    padding: 0px 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container_wrapper {
+    padding: 0px 10px;
+  }
+}
+@media (max-width: 1134px) {
+  .text_collapse {
+    display: none;
+  }
+}

@@ -7,7 +7,7 @@ import classes from "./Header.module.scss";
 
 const Header = () => {
   return (
-    <Navbar bg="white" variant="white" fixed="top" expand="sm">
+    <Navbar bg="white" variant="white" fixed="top" expand="lg">
       <Container fluid className={classes.container_wrapper}>
         <Navbar.Brand href="/" className="d-flex">
           <Image
@@ -20,21 +20,28 @@ const Header = () => {
         </Navbar.Brand>
 
         <Nav className="align-items-center">
-          <Nav.Link href="/" className={"p-sm-2 " + classes.nav_text}>
-            How it works
-          </Nav.Link>
-          <Nav.Link href="/" className={"p-sm-2 " + classes.nav_text}>
-            Pricing
-          </Nav.Link>
-          <Nav.Link href="/" className={"p-sm-2 " + classes.nav_text}>
-            Testimonials
-          </Nav.Link>
-          <Nav.Link href="/" className={"p-sm-2 " + classes.nav_text}>
-            Roadmap
-          </Nav.Link>
-          <Nav.Link href="/" className={"p-sm-2 " + classes.nav_text}>
-            About Us
-          </Nav.Link>
+          <Navbar.Collapse>
+            <Nav.Link
+              href="/"
+              className={
+                "p-sm-2 " + classes.nav_text + " " + classes.text_collapse
+              }
+            >
+              How it works
+            </Nav.Link>
+            <Nav.Link href="/" className={"p-sm-2 " + classes.nav_text}>
+              Pricing
+            </Nav.Link>
+            <Nav.Link href="/" className={"p-sm-2 " + classes.nav_text}>
+              Testimonials
+            </Nav.Link>
+            <Nav.Link href="/" className={"p-sm-2 " + classes.nav_text}>
+              Roadmap
+            </Nav.Link>
+            <Nav.Link href="/" className={"p-sm-2 " + classes.nav_text}>
+              About Us
+            </Nav.Link>
+          </Navbar.Collapse>
         </Nav>
 
         <Nav>
