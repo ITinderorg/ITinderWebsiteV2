@@ -7,7 +7,7 @@ import classes from "./Header.module.scss";
 
 const Header = () => {
   return (
-    <Navbar bg="white" variant="white" fixed="top" expand="lg">
+    <Navbar bg="white" variant="white" sticky="top" expand="lg">
       <Container fluid className={classes.container_wrapper}>
         <Navbar.Brand href="/" className="d-flex">
           <Image

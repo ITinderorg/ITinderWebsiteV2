@@ -1,0 +1,37 @@
+.text_section {
+  height: 500px;
+  flex-direction: column;
+
+  h3 {
+    color: #6275f6;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  h1 {
+    color: #323232;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 62px;
+  }
+
+  p {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #323232;
+  }
+}
+.container {
+  width: auto;
+  margin: 50px 243px !important;
+}
+
+.dots {
+  position: absolute;
+  z-index: -1;
+  top: 100px;
+  right: 35%;
+}
