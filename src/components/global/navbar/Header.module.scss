@@ -1,3 +1,8 @@
+.logo {
+  width: 145px;
+  height: 61px;
+}
+
 .nav_text {
   color: #323232;
   font-weight: 500;
@@ -22,7 +27,12 @@
   height: 80px;
 }
 
-@media (max-width: 570px) {
+@media (max-width: 1134px) {
+  .text_collapse {
+    display: none;
+  }
+}
+@media (max-width: 690px) {
   .container_wrapper {
     padding: 0px 60px;
   }
@@ -30,16 +40,16 @@
 @media (max-width: 450px) {
   .container_wrapper {
     padding: 0px 10px;
+    height: 45px;
   }
-}
+  .nav_button {
+    padding: 9px 14px !important;
+    margin-left: 30px;
 
-@media (max-width: 450px) {
-  .container_wrapper {
-    padding: 0px 10px;
+    font-size: 11px;
   }
-}
-@media (max-width: 1134px) {
-  .text_collapse {
-    display: none;
+  .logo {
+    width: 125px;
+    height: 41px;
   }
 }

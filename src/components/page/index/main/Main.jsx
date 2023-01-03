@@ -3,8 +3,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Dots from "../../../global/dots/Dots";
-import ChatImg from "../../../../assets/images/chat_main.jpg";
-import Image from "next/image";
 
 const Main = () => {
   return (
@@ -12,7 +10,7 @@ const Main = () => {
       <Row>
         <Col
           lg={6}
-          md={6}
+          md={12}
           sm={12}
           className={classes.text_section + " d-flex justify-content-center"}
         >
@@ -25,9 +23,13 @@ const Main = () => {
             Forget the old rules. You can have the best people.
             <br /> Right now. Right here.
           </p>
+          <div className={classes.buttons_container}>
+            <a className={classes.start_button}>Get started</a>
+            <a className={classes.info_button}>Learn How It Works</a>
+          </div>
         </Col>
-        <Col lg={6} md={6} sm={12}>
-          <Image src={ChatImg.src} alt="main chat" width={625} height={514} />
+        <Col lg={6} md={12} sm={12} className={classes.image_container}>
+          <div alt="main chat" className={classes.image} />
           <Dots className={classes.dots} />
         </Col>
       </Row>

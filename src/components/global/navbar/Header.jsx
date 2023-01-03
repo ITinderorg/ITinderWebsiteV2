@@ -10,12 +10,10 @@ const Header = () => {
     <Navbar bg="white" variant="white" sticky="top" expand="lg">
       <Container fluid className={classes.container_wrapper}>
         <Navbar.Brand href="/" className="d-flex">
-          <Image
+          <img
             alt=""
             src={Logo.src}
-            width={145}
-            height={61}
-            className="d-inline-block align-top"
+            className={"d-inline-block align-top " + classes.logo}
           />
         </Navbar.Brand>
 

@@ -35,3 +35,167 @@
   top: 100px;
   right: 35%;
 }
+
+.image {
+  height: 514px;
+  width: 625px;
+  margin: 0 auto;
+  background-image: url("../../../../assets/images/main_chat3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 70px 38px 34px rgba(56, 61, 71, 0.09);
+}
+
+.buttons_container {
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.start_button {
+  text-decoration: none;
+  cursor: pointer;
+  background: #6275f6;
+  border-radius: 9px;
+  color: #ffff;
+  padding: 13px 18px !important;
+
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.info_button {
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #6275f6;
+  padding: 13px 18px !important;
+  border-radius: 9px;
+  margin-left: 18px;
+
+  color: #6275f6;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+}
+
+@media (max-width: 1642px) {
+  .container {
+    margin: 50px 123px !important;
+  }
+  .image {
+    height: 444px;
+    width: 565px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .text_section {
+    h3 {
+      font-size: 30px;
+    }
+    h1 {
+      font-size: 54px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .container {
+    margin: 50px 103px !important;
+  }
+  .dots {
+    right: 25%;
+  }
+  .image {
+    height: 404px;
+    width: 525px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .dots {
+    right: 15%;
+    top: 120px;
+  }
+  .image {
+    height: 364px;
+    width: 485px;
+  }
+}
+
+@media (max-width: 992px) {
+  .dots {
+    right: 15%;
+    top: 120px;
+  }
+  .image {
+    height: 444px;
+    width: 565px;
+  }
+  .text_section {
+    h3 {
+      font-size: 26px;
+    }
+    h1 {
+      font-size: 50px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .image_container {
+    padding-left: 0px;
+  }
+  .image {
+    height: 294px;
+    width: 380px;
+    background-size: contain;
+  }
+  .container {
+    margin: 0px 43px !important;
+  }
+  .text_section {
+    height: 300px;
+    margin-top: 40px;
+    justify-content: flex-start !important;
+    h3 {
+      font-size: 16px;
+      line-height: 9px;
+    }
+    h1 {
+      font-size: 35px;
+      line-height: 40px;
+      margin: 0;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .start_button {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .info_button {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    margin: 0px 23px !important;
+  }
+  .image {
+    height: 254px;
+    width: 310px;
+    background-size: contain;
+  }
+}
