@@ -2,6 +2,7 @@ import Benefits from "./benefits/Benefits";
 import HowItWorks from "./howItWorks/HowItWorks";
 import classes from "./IndexPage.module.scss";
 import Main from "./main/Main";
+import Pricing from "./pricing/Pricing";
 
 const IndexPage = () => {
   return (
@@ -9,6 +10,7 @@ const IndexPage = () => {
       <Main />
       <Benefits />
       <HowItWorks />
+      <Pricing />
     </div>
   );
 };

@@ -1,0 +1,39 @@
+.container {
+  margin-top: 80px;
+  .title_container {
+    h3 {
+      font-weight: 700;
+      font-size: 46px;
+      line-height: 52px;
+      color: #323232;
+      padding-bottom: 12px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #323232;
+    }
+  }
+}
+.items_container {
+  margin-top: 50px;
+}
+.item_container {
+  display: flex;
+  align-items: space-around;
+  flex-direction: column;
+  text-align: center;
+}
+.item_title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #6275f6;
+}
+.item_price {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 41px;
+  color: #3f3f3f;
+}
