@@ -16,8 +16,7 @@ const Main = () => {
         >
           <h3>ITinder-bot</h3>
           <h1>
-            Quickly find <br />
-            your perfect job in IT
+            Quickly find your <br /> perfect career in IT
           </h1>
           <p>
             Forget the old rules. You can have the best people.

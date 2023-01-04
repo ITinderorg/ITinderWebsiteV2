@@ -27,3 +27,17 @@
     margin: 20px 0px;
   }
 }
+
+@media (max-width: 680px) {
+  .container {
+    margin-top: 59px;
+  }
+  .item_container {
+    h5 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 10px;
+    }
+  }
+}
