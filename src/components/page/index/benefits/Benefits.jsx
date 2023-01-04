@@ -16,7 +16,9 @@ const Benefits = () => {
               <Telegram />
             </i>
             <h5>Fast recruitment process</h5>
-            <p>A few clicks and offers in your Telegram</p>
+            <p>
+              A few clicks and offers <br /> in your Telegram
+            </p>
           </Col>
           <Col lg={4} md={4} sm={12} className={classes.item_container}>
             <i>
