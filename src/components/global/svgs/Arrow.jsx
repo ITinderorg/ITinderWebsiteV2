@@ -1,8 +1,8 @@
 const Arrow = ({ className }) => {
   return (
     <svg
-      width="225"
-      height="201"
+      width="240"
+      height="216"
       viewBox="0 0 255 231"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
