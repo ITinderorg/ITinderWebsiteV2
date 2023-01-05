@@ -42,12 +42,13 @@ const Pricing = () => {
             <br /> You indicate this level when creating a vacancy
           </p>
         </Row>
-        <Row className={classes.items_container + " offset-2"}>
+        <Row className={classes.items_container}>
           {pricings.map((item) => {
             return (
               <Col
-                lg={2}
-                sm={6}
+                lg
+                md
+                sm={12}
                 key={item.id}
                 className={classes.item_container}
               >
