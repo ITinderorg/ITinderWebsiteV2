@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className={classes.container}>
       <Container>
         <Row>
-          <Row className={"justify-content-center " + classes.socials}>
+          <Row className="justify-content-center">
             <Col
               lg={1}
               md={1}

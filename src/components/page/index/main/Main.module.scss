@@ -40,11 +40,10 @@
   height: 514px;
   width: 625px;
   margin: 0 auto;
-  background-image: url("../../../../assets/images/main_chat3.png");
+  background-image: url("../../../../assets/images/chat_main.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  box-shadow: 70px 38px 34px rgba(56, 61, 71, 0.09);
+  background-size: contain;
 }
 
 .buttons_container {
@@ -156,7 +155,6 @@
   .image {
     height: 294px;
     width: 380px;
-    background-size: contain;
   }
   .container {
     margin: 0px 43px !important;
@@ -196,6 +194,5 @@
   .image {
     height: 254px;
     width: 310px;
-    background-size: contain;
   }
 }
