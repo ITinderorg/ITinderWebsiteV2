@@ -1,0 +1,53 @@
+.container {
+  margin-top: 50px;
+}
+.image {
+  height: 659px;
+  width: 1057px;
+  margin: 0 auto;
+  background-image: url("../../../../assets/images/roadmap2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.title_container {
+  h3 {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 52px;
+    color: #323232;
+    padding-bottom: 12px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #323232;
+  }
+}
+
+@media (max-width: 1174px) {
+  .title_container {
+    h3 {
+      font-size: 41px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+  .image {
+    height: 459px;
+    width: 857px;
+  }
+}
+@media (max-width: 1078px) {
+  .title_container {
+    h3 {
+      font-size: 39px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+}

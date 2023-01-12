@@ -28,7 +28,7 @@ const Main = () => {
           </div>
         </Col>
         <Col lg={6} md={12} sm={12} className={classes.image_container}>
-          <div alt="main chat" className={classes.image} />
+          <div className={classes.image} />
           <Dots className={classes.dots} />
         </Col>
       </Row>
