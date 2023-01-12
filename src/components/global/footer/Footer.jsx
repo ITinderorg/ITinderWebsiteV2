@@ -8,8 +8,8 @@ import classes from "./Footer.module.scss";
 
 const Footer = () => {
   return (
-    <footer className={classes.container}>
-      <Container>
+    <footer className={classes.footer}>
+      <Container className={classes.container}>
         <Row>
           <Row className="justify-content-center">
             <Col

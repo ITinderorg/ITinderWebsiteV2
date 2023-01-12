@@ -13,7 +13,7 @@ const Roadmap = () => {
           create a community and move together in Web3
         </p>
       </Row>
-      <Row className={classes.items_container}>
+      <Row>
         <div className={classes.image} />
       </Row>
     </Container>
