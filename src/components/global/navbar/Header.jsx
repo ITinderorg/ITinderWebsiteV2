@@ -18,7 +18,17 @@ const Header = ({ refs }) => {
   return (
     <Navbar bg="white" variant="white" sticky="top" expand="lg">
       <Container fluid className={classes.container_wrapper}>
-        <Navbar.Brand href="/" className="d-flex align-items-center m-0">
+        <Navbar.Brand
+          href="/"
+          className="d-flex align-items-center m-0"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          }}
+        >
           <img
             alt=""
             src={Logo.src}
@@ -75,7 +85,10 @@ const Header = ({ refs }) => {
         </Nav>
 
         <Nav className={classes.nav_button_container}>
-          <Nav.Link href="/" className={"p-sm-2 " + classes.nav_button}>
+          <Nav.Link
+            href="https://t.me/i_tinder_bot"
+            className={"p-sm-2 " + classes.nav_button}
+          >
             Get started
           </Nav.Link>
         </Nav>

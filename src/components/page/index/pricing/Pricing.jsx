@@ -25,11 +25,6 @@ const Pricing = () => {
       name: "Monthly",
       price: "$15",
     },
-    {
-      id: 4,
-      name: "Enterprise",
-      price: "Contact Us",
-    },
   ];
   return (
     <>
@@ -57,6 +52,10 @@ const Pricing = () => {
               </Col>
             );
           })}
+          <Col lg md sm={12} className={classes.item_container}>
+            <p className={classes.item_title}>Enterprise</p>
+            <a className={classes.item_link}>Contact Us</a>
+          </Col>
         </Row>
       </Container>
     </>

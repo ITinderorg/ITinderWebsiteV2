@@ -23,8 +23,23 @@ const Main = () => {
             <br /> Right now. Right here.
           </p>
           <div className={classes.buttons_container}>
-            <a className={classes.start_button}>Get started</a>
-            <a className={classes.info_button}>Learn How It Works</a>
+            <a
+              className={classes.start_button}
+              href="https://t.me/i_tinder_bot"
+            >
+              Get started
+            </a>
+            <a
+              className={classes.info_button}
+              onClick={() => {
+                window.scrollTo({
+                  top: 1000,
+                  behavior: "smooth",
+                });
+              }}
+            >
+              Learn How It Works
+            </a>
           </div>
         </Col>
         <Col lg={6} md={12} sm={12} className={classes.image_container}>

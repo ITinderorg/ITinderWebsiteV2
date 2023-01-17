@@ -44,6 +44,16 @@
   line-height: 41px;
   color: #3f3f3f;
 }
+.item_link {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-decoration-line: underline;
+  margin: auto 0px;
+  color: #6275f6;
+}
 
 @media (max-width: 1174px) {
   .item_container {
