@@ -56,9 +56,7 @@ export default function Home() {
         <link rel="alternate" href="/" hrefLang="ua" />
       </Head>
 
-      <Header />
       <IndexPage data={data} />
-      <Footer />
     </>
   );
 }

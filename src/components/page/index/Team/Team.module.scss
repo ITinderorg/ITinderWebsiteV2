@@ -1,6 +1,14 @@
+.back {
+  position: relative;
+  top: -150px;
+  background-color: #f8f8fa;
+  height: 922px;
+  z-index: -1;
+  margin-bottom: 0px;
+}
 .container {
-  margin-top: 96px;
-  margin-bottom: 150px;
+  position: relative;
+  top: 250px;
   padding: 0 90px;
 }
 .item_container {
@@ -70,6 +78,9 @@
     height: 220px;
     width: 185px;
   }
+  .back {
+    height: 1322px;
+  }
 }
 @media (max-width: 991px) {
   .image {
@@ -85,6 +96,9 @@
   .image {
     height: 310px;
     width: 255px;
+  }
+  .back {
+    height: 1822px;
   }
 }
 @media (max-width: 426px) {

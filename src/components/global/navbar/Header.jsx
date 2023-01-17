@@ -6,7 +6,15 @@ import Image from "next/image";
 import classes from "./Header.module.scss";
 import UAFlag from "../svgs/UAFlag";
 
-const Header = () => {
+const Header = ({ refs }) => {
+  const scrollToSection = (e, elementRef) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: elementRef.current.offsetTop - 100,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <Navbar bg="white" variant="white" sticky="top" expand="lg">
       <Container fluid className={classes.container_wrapper}>
@@ -29,16 +37,29 @@ const Header = () => {
               className={
                 "p-sm-2 " + classes.nav_text + " " + classes.text_collapse
               }
+              onClick={(e) => scrollToSection(e, refs.howItWorks)}
             >
               How it works
             </Nav.Link>
-            <Nav.Link href="/" className={"p-sm-2 " + classes.nav_text}>
+            <Nav.Link
+              href="/"
+              className={"p-sm-2 " + classes.nav_text}
+              onClick={(e) => scrollToSection(e, refs.pricing)}
+            >
               Pricing
             </Nav.Link>
-            <Nav.Link href="/" className={"p-sm-2 " + classes.nav_text}>
+            <Nav.Link
+              href="/"
+              className={"p-sm-2 " + classes.nav_text}
+              onClick={(e) => scrollToSection(e, refs.testimonials)}
+            >
               Testimonials
             </Nav.Link>
-            <Nav.Link href="/" className={"p-sm-2 " + classes.nav_text}>
+            <Nav.Link
+              href="/"
+              className={"p-sm-2 " + classes.nav_text}
+              onClick={(e) => scrollToSection(e, refs.roadmap)}
+            >
               Roadmap
             </Nav.Link>
             <Nav.Link
@@ -46,6 +67,7 @@ const Header = () => {
               className={
                 "p-sm-2 " + classes.nav_text + " " + classes.text_collapse_2
               }
+              onClick={(e) => scrollToSection(e, refs.aboutUs)}
             >
               About Us
             </Nav.Link>
