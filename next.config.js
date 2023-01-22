@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   swcMinify: true,
-  i18n: {
+  /*i18n: {
     locales: ["en"],
     defaultLocale: "en",
     domains: [
@@ -11,7 +11,7 @@ const nextConfig = {
         http: true,
       },
     ],
-  },
+  },*/
 };
 
 module.exports = nextConfig;

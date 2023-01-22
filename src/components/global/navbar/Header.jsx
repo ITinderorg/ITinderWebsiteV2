@@ -63,7 +63,7 @@ const Header = ({ refs }) => {
               className={"p-sm-2 " + classes.nav_text}
               onClick={(e) => scrollToSection(e, refs.testimonials)}
             >
-              Testimonials
+              Reviews
             </Nav.Link>
             <Nav.Link
               href="/"
