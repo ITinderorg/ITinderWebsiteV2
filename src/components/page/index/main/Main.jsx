@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Dots from "../../../global/svgs/Dots";
 
-const Main = () => {
+const Main = ({ secRef }) => {
   return (
     <Container fluid className={classes.container}>
       <Row>
@@ -16,7 +16,7 @@ const Main = () => {
         >
           <h3>ITinder-bot</h3>
           <h1>
-            Quickly find your <br /> perfect career in IT
+            Quickly find your <br /> perfect position match in IT
           </h1>
           <p>
             Forget the old rules. You can have the best people.
@@ -33,7 +33,7 @@ const Main = () => {
               className={classes.info_button}
               onClick={() => {
                 window.scrollTo({
-                  top: 1000,
+                  top: secRef.current.offsetTop,
                   behavior: "smooth",
                 });
               }}

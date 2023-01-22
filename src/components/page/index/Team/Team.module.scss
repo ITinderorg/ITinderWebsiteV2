@@ -2,8 +2,8 @@
   position: relative;
   top: -150px;
   background-color: #f8f8fa;
-  height: 922px;
-  z-index: -1;
+  height: 1222px;
+  z-index: 0;
   margin-bottom: 0px;
 }
 .container {
@@ -13,7 +13,6 @@
 }
 .item_container {
   position: relative;
-  cursor: pointer;
   h5 {
     margin-top: 10px;
     font-weight: 700;
@@ -29,13 +28,20 @@
   }
 
   .link {
+    cursor: pointer;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 3;
   }
+}
+.person_container {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .title_container {
@@ -79,7 +85,7 @@
     width: 185px;
   }
   .back {
-    height: 1322px;
+    height: 1522px;
   }
 }
 @media (max-width: 991px) {
@@ -98,7 +104,7 @@
     width: 255px;
   }
   .back {
-    height: 1822px;
+    height: 2422px;
   }
 }
 @media (max-width: 426px) {

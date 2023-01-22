@@ -28,12 +28,12 @@ const HowItWorks = () => {
           <Col lg={6} md={6} sm={12} className={classes.second_text}>
             <div>
               <h3>
-                Are you a recruiter <br /> and looking for IT <br />{" "}
+                Are you a recruiter <br /> and looking for IT <br />
                 specialists?
               </h3>
               <p>
-                Fill the vacancy, get a match from the <br /> candidate, wait
-                for the CV.
+                Fill the vacancy, get a match from the candidate,
+                <br /> hire successfully{" "}
               </p>
             </div>
           </Col>
@@ -48,13 +48,8 @@ const HowItWorks = () => {
           </Col>
           <Col lg={7} md={6} sm={12} className={classes.start_text}>
             <div className="pe-5">
-              <h3>
-                Looking for a job <br /> in IT?
-              </h3>
-              <p>
-                Fill out the questionnaire, like the vacancy, chat <br /> and
-                catch an offer
-              </p>
+              <h3>Are you a candidate?</h3>
+              <p>Fill out the form - Get a match - Receive an offer</p>
             </div>
           </Col>
         </Row>

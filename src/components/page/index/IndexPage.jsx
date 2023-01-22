@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => {
   return (
     <div>
       <Header refs={refs} />
-      <Main />
+      <Main secRef={howItWorks} />
       <Benefits />
       <div ref={howItWorks}>
         <HowItWorks />

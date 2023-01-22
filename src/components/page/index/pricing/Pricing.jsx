@@ -30,11 +30,11 @@ const Pricing = () => {
     <>
       <Container className={classes.container}>
         <Row className={"text-center " + classes.title_container}>
-          <h3>Price list for a recruiter</h3>
+          <h3>Pricing for recruiter</h3>
           <p>
-            The size of the bonus depends on the professional level of your
-            candidate.
-            <br /> You indicate this level when creating a vacancy
+            Subscription is based on the length of our agreement, <br /> the
+            longer you stay with us - the less you pay. <br /> Candidates can
+            use service free of charge
           </p>
         </Row>
         <Row className={classes.items_container}>

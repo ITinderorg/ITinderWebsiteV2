@@ -6,6 +6,7 @@ import KateImg from "../../../../assets/images/kate.png";
 import AndriiImg from "../../../../assets/images/andrii.png";
 import VladImg from "../../../../assets/images/vlad.png";
 import YuriiImg from "../../../../assets/images/yurii.png";
+import UstymImg from "../../../../assets/images/ustym.png";
 
 const Team = () => {
   return (
@@ -15,56 +16,75 @@ const Team = () => {
           <h3>Our team</h3>
         </Row>
         <Row>
-          <Col lg={3} md={6} sm={6} className={classes.item_container}>
-            <img src={KateImg.src} className={classes.image} />
-            <h5>Kate Riabova</h5>
-            <p>Founder ITinder, IT-recuiter</p>
-            <a
-              href="https://www.linkedin.com/in/kateryna-ryabova-01a90a202/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span className={classes.link}></span>
-            </a>
+          <Col lg={4} md={6} sm={6} className={classes.person_container}>
+            <div className={classes.item_container}>
+              <img src={KateImg.src} className={classes.image} />
+              <h5>Kate Riabova</h5>
+              <p>Founder & IT-recruiter</p>
+              <a
+                href="https://www.linkedin.com/in/kateryna-ryabova-01a90a202/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span className={classes.link}></span>
+              </a>
+            </div>
           </Col>
-          <Col lg={3} md={6} sm={6} className={classes.item_container}>
-            <img src={AndriiImg.src} className={classes.image} />
-            <h5>Andrii Borysenko</h5>
-            <p>
-              Founder & CEO ITinder <br />
-              .NET Software Engineer
-            </p>
-            <a
-              href="https://www.linkedin.com/in/andrii-borysenko-68a8a518a/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span className={classes.link}></span>
-            </a>
+          <Col lg={4} md={6} sm={6} className={classes.person_container}>
+            <div className={classes.item_container}>
+              <img src={AndriiImg.src} className={classes.image} />
+              <h5>Andrii Borysenko</h5>
+              <p>Founder & CEO</p>
+              <a
+                href="https://www.linkedin.com/in/andrii-borysenko-68a8a518a/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span className={classes.link}></span>
+              </a>
+            </div>
           </Col>
-          <Col lg={3} md={6} sm={6} className={classes.item_container}>
-            <img src={VladImg.src} className={classes.image} />
-            <h5>Vladyslav Dubovyi</h5>
-            <p>Fullstack .NET Engineer</p>
-            <a
-              href="https://www.linkedin.com/in/vladyslav-dubovyi/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span className={classes.link}></span>
-            </a>
+          <Col lg={4} md={6} sm={6} className={classes.person_container}>
+            <div className={classes.item_container}>
+              <img src={VladImg.src} className={classes.image} />
+              <h5>Vladyslav Dubovyi</h5>
+              <p>Front-End Engineer</p>
+              <a
+                href="https://www.linkedin.com/in/vladyslav-dubovyi/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span className={classes.link}></span>
+              </a>
+            </div>
           </Col>
-          <Col lg={3} md={6} sm={6} className={classes.item_container}>
-            <img src={YuriiImg.src} className={classes.image} />
-            <h5>Yurii Voskoboinyk</h5>
-            <p>Marketing Team Lead</p>
-            <a
-              href="https://www.linkedin.com/in/yurii-voskoboinyk/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span className={classes.link}></span>
-            </a>
+          <Col lg={6} md={6} sm={6} className={classes.person_container}>
+            <div className={classes.item_container}>
+              <img src={YuriiImg.src} className={classes.image} />
+              <h5>Yurii Voskoboinyk</h5>
+              <p>Marketing</p>
+              <a
+                href="https://www.linkedin.com/in/yurii-voskoboinyk/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span className={classes.link}></span>
+              </a>
+            </div>
+          </Col>
+          <Col lg={6} md={6} sm={6} className={classes.person_container}>
+            <div className={classes.item_container}>
+              <img src={UstymImg.src} className={classes.image} />
+              <h5>Ustym Manko</h5>
+              <p>Sales</p>
+              <a
+                href="https://www.linkedin.com/in/ustymmanko/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span className={classes.link}></span>
+              </a>
+            </div>
           </Col>
         </Row>
       </Container>

@@ -5,10 +5,11 @@
   height: 659px;
   width: 1057px;
   margin: 0 auto;
-  background-image: url("../../../../assets/images/roadmap2.png");
+  background-image: url("../../../../assets/images/roadmap.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  z-index: 1;
 }
 
 .title_container {

@@ -9,8 +9,8 @@ const Roadmap = () => {
       <Row className={"text-center " + classes.title_container}>
         <h3>Roadmap</h3>
         <p>
-          We are planning never stop and expand the functionality. <br /> To
-          create a community and move together in Web3
+          We are planning to never stop expanding. <br /> As a community we move
+          together to Web3
         </p>
       </Row>
       <Row>

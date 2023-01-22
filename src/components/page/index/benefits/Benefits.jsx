@@ -25,7 +25,7 @@ const Benefits = () => {
           </i>
           <h5>Smart match solution</h5>
           <p>
-            which allows you to find the best <br />
+            Allows you to find the best <br />
             candidates within a seconds
           </p>
         </Col>
