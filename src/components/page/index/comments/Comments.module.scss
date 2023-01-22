@@ -162,3 +162,36 @@
     }
   }
 }
+
+@media (max-width: 560px) {
+  .swiper {
+    height: 430px;
+  }
+  .star {
+    width: 8px;
+    height: 8px;
+  }
+  .swiper_slide {
+    padding: 50px 20px 36px 20px;
+    height: 271px !important;
+    width: 250px !important;
+
+    p {
+      font-size: 12px;
+    }
+    .commentor {
+      .commentor_photo {
+        width: 37px;
+        height: 37px;
+      }
+      .commentor_name {
+        font-size: 10px;
+        line-height: 12px;
+      }
+      .commentor_position {
+        font-size: 8px;
+        line-height: 12px;
+      }
+    }
+  }
+}

@@ -62,15 +62,15 @@ const Comments = () => {
             return (
               <SwiperSlide key={item.id} className={classes.swiper_slide}>
                 <div className={classes.stars}>
-                  <FullStar />
-                  <FullStar />
-                  <FullStar />
-                  <FullStar />
-                  <FullStar />
+                  <FullStar className={classes.star} />
+                  <FullStar className={classes.star} />
+                  <FullStar className={classes.star} />
+                  <FullStar className={classes.star} />
+                  <FullStar className={classes.star} />
                 </div>
                 <p>{item.text}</p>
                 <div className={classes.commentor}>
-                  <img src={item.photo} />
+                  <img src={item.photo} className={classes.commentor_photo} />
                   <div>
                     <p className={classes.commentor_name}>{item.name}</p>
                     <p className={classes.commentor_position}>
