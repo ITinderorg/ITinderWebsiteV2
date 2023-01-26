@@ -12,62 +12,51 @@ const Footer = () => {
       <Container className={classes.container}>
         <Row className="justify-content-center">
           <Col
-            lg={1}
-            md={1}
-            sm={1}
-            xs={1}
+            lg={2}
+            md={2}
+            sm={2}
+            xs={2}
             className={
               "d-flex justify-content-center align-items-center align-self-center " +
               classes.social_link
             }
           >
-            <a href="https://www.instagram.com/itinder_ua/">
-              <AiFillInstagram
-                style={{ color: "white", height: 20, width: 20 }}
-              />
-            </a>
-          </Col>
-          <Col
-            lg={1}
-            md={1}
-            sm={1}
-            xs={1}
-            className={
-              "d-flex justify-content-center align-items-center align-self-center " +
-              classes.social_link
-            }
-          >
-            <a href="https://www.linkedin.com/company/itinder/">
-              <FaLinkedinIn style={{ color: "white", height: 20, width: 20 }} />
-            </a>
-          </Col>
-          <Col
-            lg={1}
-            md={1}
-            sm={1}
-            xs={1}
-            className={
-              "d-flex justify-content-center align-items-center align-self-center " +
-              classes.social_link
-            }
-          >
-            <a href="https://twitter.com/ITinder_ua">
-              <BsTwitter style={{ color: "white", height: 20, width: 20 }} />
-            </a>
-          </Col>
-          <Col
-            lg={1}
-            md={1}
-            sm={1}
-            xs={1}
-            className={
-              "d-flex justify-content-center align-items-center align-self-center " +
-              classes.social_link
-            }
-          >
-            <a href="https://t.me/I_Tinder">
-              <FaTelegram style={{ color: "white", height: 20, width: 20 }} />
-            </a>
+            <Col className="d-flex justify-content-center">
+              <a
+                href="https://www.instagram.com/itinder_ua/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiFillInstagram
+                  style={{ color: "white", height: 20, width: 20 }}
+                />
+              </a>
+            </Col>
+            <Col className="d-flex justify-content-center">
+              <a
+                href="https://www.linkedin.com/company/itinder/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedinIn
+                  style={{ color: "white", height: 20, width: 20 }}
+                />
+              </a>
+            </Col>
+            <Col className="d-flex justify-content-center">
+              <a
+                href="https://twitter.com/ITinder_ua"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BsTwitter style={{ color: "white", height: 20, width: 20 }} />
+              </a>
+            </Col>
+            <Col className="d-flex justify-content-center">
+              <a href="https://t.me/I_Tinder" target="_blank" rel="noreferrer">
+                <FaTelegram style={{ color: "white", height: 20, width: 20 }} />
+              </a>
+            </Col>
           </Col>
         </Row>
         <Row>
