@@ -10,7 +10,7 @@ const Roadmap = () => {
         <h3>Roadmap</h3>
         <p>
           We are planning to never stop expanding. <br /> As a community we move
-          together to Web3
+          together to innovative recruitment
         </p>
       </Row>
       <Row>

@@ -1,10 +1,10 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Telegram from "../../../global/svgs/Telegram";
 import classes from "./Benefits.module.scss";
 import Planet from "../../../global/svgs/Planet";
 import Puzzle from "../../../global/svgs/Puzzle";
+import Telegram from "../../../../assets/images/telegram.png";
 
 const Benefits = () => {
   return (
@@ -12,7 +12,7 @@ const Benefits = () => {
       <Row>
         <Col lg={4} md={4} sm={12} className={classes.item_container}>
           <i>
-            <Telegram />
+            <img src={Telegram.src} width={46} height={46} />
           </i>
           <h5>Fast recruitment process</h5>
           <p>
@@ -20,7 +20,7 @@ const Benefits = () => {
           </p>
         </Col>
         <Col lg={4} md={4} sm={12} className={classes.item_container}>
-          <i>
+          <i className={classes.puzzle}>
             <Puzzle />
           </i>
           <h5>Smart match solution</h5>
