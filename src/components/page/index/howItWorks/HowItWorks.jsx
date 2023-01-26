@@ -5,13 +5,22 @@ import classes from "./HowItWorks.module.scss";
 import Dots from "../../../global/svgs/Dots";
 import Arrow from "../../../global/svgs/Arrow";
 
+import FirstImg from "../../../../assets/images/chat_start.png";
+import SecondImg from "../../../../assets/images/chat_second.png";
+import ThirdImg from "../../../../assets/images/chat_third.png";
+
 const HowItWorks = () => {
   return (
     <section className={classes.back}>
       <Container className={classes.container}>
         <Row className={classes.item_container}>
           <Col lg={5} md={6} sm={12} className={classes.start_image_container}>
-            <div className={classes.start_image}></div>
+            <img
+              src={FirstImg.src}
+              className={classes.start_image}
+              title="telegram"
+              loading="lazy"
+            />
           </Col>
           <Col lg={7} md={6} sm={12} className={classes.start_text}>
             <div className="pe-5">
@@ -38,12 +47,22 @@ const HowItWorks = () => {
             </div>
           </Col>
           <Col lg={6} md={6} sm={12} className={classes.second_image_container}>
-            <div className={classes.second_image}></div>
+            <img
+              src={SecondImg.src}
+              className={classes.second_image}
+              title="telegram"
+              loading="lazy"
+            />
           </Col>
         </Row>
         <Row className={classes.item_container}>
           <Col lg={5} md={6} sm={12} className={classes.start_image_container}>
-            <div className={classes.third_image}></div>
+            <img
+              src={ThirdImg.src}
+              className={classes.third_image}
+              title="telegram"
+              loading="lazy"
+            />
             <Dots className={classes.dots} />
           </Col>
           <Col lg={7} md={6} sm={12} className={classes.start_text}>

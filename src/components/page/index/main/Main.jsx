@@ -4,6 +4,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Dots from "../../../global/svgs/Dots";
 
+import Img from "../../../../assets/images/chat_main.png";
+
 const Main = ({ secRef }) => {
   return (
     <Container fluid className={classes.container}>
@@ -43,7 +45,13 @@ const Main = ({ secRef }) => {
           </div>
         </Col>
         <Col lg={6} md={12} sm={12} className={classes.image_container}>
-          <div className={classes.image} />
+          <img
+            src={Img.src}
+            className={classes.image}
+            alt="What can this bot do?"
+            title="telegram"
+            loading="lazy"
+          />
           <Dots className={classes.dots} />
         </Col>
       </Row>

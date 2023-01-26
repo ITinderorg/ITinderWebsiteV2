@@ -49,7 +49,12 @@ const Comments = () => {
               communication with recruiters are done simply on the phone.”
             </p>
             <div className={classes.commentor}>
-              <img src={Comment1Img.src} className={classes.commentor_photo} />
+              <img
+                src={Comment1Img.src}
+                className={classes.commentor_photo}
+                title="telegram"
+                loading="lazy"
+              />
               <div>
                 <p className={classes.commentor_name}>Maria T.</p>
                 <p className={classes.commentor_position}>SMM manager</p>
@@ -70,7 +75,12 @@ const Comments = () => {
               understandable🙂”
             </p>
             <div className={classes.commentor}>
-              <img src={Comment2Img.src} className={classes.commentor_photo} />
+              <img
+                src={Comment2Img.src}
+                className={classes.commentor_photo}
+                title="telegram"
+                loading="lazy"
+              />
               <div>
                 <p className={classes.commentor_name}>Evgenia Syniavska</p>
                 <p className={classes.commentor_position}>IT Researcher</p>
@@ -93,7 +103,12 @@ const Comments = () => {
               I&apos;ll definitely use the service again!”
             </p>
             <div className={classes.commentor}>
-              <img src={Comment3Img.src} className={classes.commentor_photo} />
+              <img
+                src={Comment3Img.src}
+                className={classes.commentor_photo}
+                title="telegram"
+                loading="lazy"
+              />
               <div>
                 <p className={classes.commentor_name}>Yel Malichenko</p>
                 <p className={classes.commentor_position}>Project manager</p>
@@ -114,7 +129,12 @@ const Comments = () => {
               recommendations for everyone! I appreciate your help a lot 👍”
             </p>
             <div className={classes.commentor}>
-              <img src={Comment4Img.src} className={classes.commentor_photo} />
+              <img
+                src={Comment4Img.src}
+                className={classes.commentor_photo}
+                title="telegram"
+                loading="lazy"
+              />
               <div>
                 <p className={classes.commentor_name}>Elizabeth Zhyrova</p>
                 <p className={classes.commentor_position}>
@@ -139,7 +159,12 @@ const Comments = () => {
               totally recommend it!”
             </p>
             <div className={classes.commentor}>
-              <img src={Comment5Img.src} className={classes.commentor_photo} />
+              <img
+                src={Comment5Img.src}
+                className={classes.commentor_photo}
+                title="telegram"
+                loading="lazy"
+              />
               <div>
                 <p className={classes.commentor_name}>Yana Martyniuk</p>
                 <p className={classes.commentor_position}>IT Recruiter</p>
@@ -161,7 +186,12 @@ const Comments = () => {
               standpoint, especially the salary filter, which is the best.”
             </p>
             <div className={classes.commentor}>
-              <img src={Comment6Img.src} className={classes.commentor_photo} />
+              <img
+                src={Comment6Img.src}
+                className={classes.commentor_photo}
+                title="telegram"
+                loading="lazy"
+              />
               <div>
                 <p className={classes.commentor_name}>Sergiy Khomchenko</p>
                 <p className={classes.commentor_position}>

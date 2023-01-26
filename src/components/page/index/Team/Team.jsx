@@ -23,7 +23,12 @@ const Team = () => {
             className={classes.person_container + " justify-content-lg-end"}
           >
             <div className={classes.item_container}>
-              <img src={KateImg.src} className={classes.image} />
+              <img
+                src={KateImg.src}
+                className={classes.image}
+                title="telegram"
+                loading="lazy"
+              />
               <h5>Kate Riabova</h5>
               <p>Founder & IT-recruiter</p>
               <a
@@ -42,7 +47,12 @@ const Team = () => {
             className={classes.person_container + " w-80"}
           >
             <div className={classes.item_container}>
-              <img src={AndriiImg.src} className={classes.image} />
+              <img
+                src={AndriiImg.src}
+                className={classes.image}
+                title="telegram"
+                loading="lazy"
+              />
               <h5>Andrii Borysenko</h5>
               <p>Founder & CEO</p>
               <a
@@ -61,7 +71,12 @@ const Team = () => {
             className={classes.person_container + " justify-content-lg-start"}
           >
             <div className={classes.item_container}>
-              <img src={VladImg.src} className={classes.image} />
+              <img
+                src={VladImg.src}
+                className={classes.image}
+                title="telegram"
+                loading="lazy"
+              />
               <h5>Vladyslav Dubovyi</h5>
               <p>Front-End Engineer</p>
               <a
@@ -83,7 +98,12 @@ const Team = () => {
             }
           >
             <div className={classes.item_container}>
-              <img src={YuriiImg.src} className={classes.image} />
+              <img
+                src={YuriiImg.src}
+                className={classes.image}
+                title="telegram"
+                loading="lazy"
+              />
               <h5>Yurii Voskoboinyk</h5>
               <p>Marketing</p>
               <a
@@ -102,7 +122,12 @@ const Team = () => {
             className={classes.person_container + " ms-lg-3"}
           >
             <div className={classes.item_container}>
-              <img src={UstymImg.src} className={classes.image} />
+              <img
+                src={UstymImg.src}
+                className={classes.image}
+                title="telegram"
+                loading="lazy"
+              />
               <h5>Ustym Manko</h5>
               <p>Sales</p>
               <a

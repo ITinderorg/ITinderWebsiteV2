@@ -3,6 +3,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+import Img from "../../../../assets/images/roadmap.png";
+
 const Roadmap = () => {
   return (
     <Container className={classes.container}>
@@ -14,7 +16,12 @@ const Roadmap = () => {
         </p>
       </Row>
       <Row>
-        <div className={classes.image} />
+        <img
+          src={Img.src}
+          className={classes.image}
+          title="telegram"
+          loading="lazy"
+        />
       </Row>
     </Container>
   );
