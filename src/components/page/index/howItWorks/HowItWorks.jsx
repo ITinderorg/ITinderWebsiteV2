@@ -23,7 +23,7 @@ const HowItWorks = () => {
             />
           </Col>
           <Col lg={7} md={6} sm={12} className={classes.start_text}>
-            <div className="pe-5">
+            <div className="pe-lg-5 pe-md-5">
               <h3>ITinder - bot</h3>
               <p>
                 Simple recruitment through Telegram. <br />
@@ -66,7 +66,7 @@ const HowItWorks = () => {
             <Dots className={classes.dots} />
           </Col>
           <Col lg={7} md={6} sm={12} className={classes.start_text}>
-            <div className="pe-5">
+            <div className="pe-lg-5 pe-md-5">
               <h3>Are you a candidate?</h3>
               <p>Fill out the form - Get a match - Receive an offer</p>
             </div>

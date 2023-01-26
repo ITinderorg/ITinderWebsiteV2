@@ -133,9 +133,12 @@
 @media (max-width: 768px) {
   .start_image_container {
     justify-content: center;
+    order: 2 !important;
   }
   .start_text {
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+    order: 1 !important;
   }
   .second_text {
     align-items: flex-start;
