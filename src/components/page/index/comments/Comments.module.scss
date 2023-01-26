@@ -108,6 +108,11 @@
     color: #323232;
     margin-bottom: 15px;
   }
+  .comment_text {
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
   .commentor {
     display: flex;
     img {
@@ -135,10 +140,13 @@
 
 @media (max-width: 1300px) {
   .comments_container {
-    height: 450px;
+    height: 470px;
   }
   .swiper_slide {
-    height: 321px !important;
+    height: 351px !important;
+    .comment_text {
+      height: 190px;
+    }
   }
 }
 @media (max-width: 1024px) {
@@ -147,8 +155,12 @@
   }
   .swiper_slide {
     padding: 50px 20px 36px 20px;
-    height: 371px !important;
+    height: 351px !important;
+    width: 250px !important;
 
+    .comment_text {
+      height: 180px;
+    }
     p {
       font-size: 15px;
     }
@@ -175,6 +187,10 @@
     padding: 50px 20px 36px 20px;
     height: 271px !important;
     width: 250px !important;
+
+    .comment_text {
+      height: 100px;
+    }
 
     p {
       font-size: 12px;

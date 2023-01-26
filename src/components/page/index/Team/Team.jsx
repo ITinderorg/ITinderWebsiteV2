@@ -16,7 +16,12 @@ const Team = () => {
           <h3>Our team</h3>
         </Row>
         <Row>
-          <Col lg={4} md={6} sm={6} className={classes.person_container}>
+          <Col
+            lg={4}
+            md={6}
+            sm={6}
+            className={classes.person_container + " justify-content-lg-end"}
+          >
             <div className={classes.item_container}>
               <img src={KateImg.src} className={classes.image} />
               <h5>Kate Riabova</h5>
@@ -30,7 +35,12 @@ const Team = () => {
               </a>
             </div>
           </Col>
-          <Col lg={4} md={6} sm={6} className={classes.person_container}>
+          <Col
+            lg={4}
+            md={6}
+            sm={6}
+            className={classes.person_container + " w-80"}
+          >
             <div className={classes.item_container}>
               <img src={AndriiImg.src} className={classes.image} />
               <h5>Andrii Borysenko</h5>
@@ -44,7 +54,12 @@ const Team = () => {
               </a>
             </div>
           </Col>
-          <Col lg={4} md={6} sm={6} className={classes.person_container}>
+          <Col
+            lg={4}
+            md={6}
+            sm={6}
+            className={classes.person_container + " justify-content-lg-start"}
+          >
             <div className={classes.item_container}>
               <img src={VladImg.src} className={classes.image} />
               <h5>Vladyslav Dubovyi</h5>
@@ -58,7 +73,15 @@ const Team = () => {
               </a>
             </div>
           </Col>
-          <Col lg={6} md={6} sm={6} className={classes.person_container}>
+          <Col
+            lg={3}
+            md={6}
+            sm={6}
+            className={
+              classes.person_container +
+              " offset-lg-3 justify-content-lg-start me-lg-3"
+            }
+          >
             <div className={classes.item_container}>
               <img src={YuriiImg.src} className={classes.image} />
               <h5>Yurii Voskoboinyk</h5>
@@ -72,7 +95,12 @@ const Team = () => {
               </a>
             </div>
           </Col>
-          <Col lg={6} md={6} sm={6} className={classes.person_container}>
+          <Col
+            lg={3}
+            md={6}
+            sm={6}
+            className={classes.person_container + " ms-lg-3"}
+          >
             <div className={classes.item_container}>
               <img src={UstymImg.src} className={classes.image} />
               <h5>Ustym Manko</h5>
