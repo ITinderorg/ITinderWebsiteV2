@@ -9,7 +9,7 @@ const Roadmap = () => {
   return (
     <Container className={classes.container}>
       <Row className={"text-center " + classes.title_container}>
-        <h3>Roadmap</h3>
+        <h2>Roadmap</h2>
         <p>
           We are planning to never stop expanding. <br /> As a community we move
           together to innovative recruitment
@@ -19,8 +19,8 @@ const Roadmap = () => {
         <img
           src={Img.src}
           className={classes.image}
-          title="telegram"
           loading="lazy"
+          alt="ITinder roadmap"
         />
       </Row>
     </Container>

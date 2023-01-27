@@ -22,7 +22,7 @@ const Comments = () => {
   return (
     <Container className={classes.container} fluid>
       <Row className={"text-center " + classes.title_container}>
-        <h3>What users say about ITinder</h3>
+        <h2>What users say about ITinder</h2>
       </Row>
       <Row className={classes.comments_container}>
         <Swiper
@@ -52,8 +52,8 @@ const Comments = () => {
               <img
                 src={Comment1Img.src}
                 className={classes.commentor_photo}
-                title="telegram"
                 loading="lazy"
+                alt="Reviewer 1"
               />
               <div>
                 <p className={classes.commentor_name}>Maria T.</p>
@@ -78,8 +78,8 @@ const Comments = () => {
               <img
                 src={Comment2Img.src}
                 className={classes.commentor_photo}
-                title="telegram"
                 loading="lazy"
+                alt="Reviewer 2"
               />
               <div>
                 <p className={classes.commentor_name}>Evgenia Syniavska</p>
@@ -106,8 +106,8 @@ const Comments = () => {
               <img
                 src={Comment3Img.src}
                 className={classes.commentor_photo}
-                title="telegram"
                 loading="lazy"
+                alt="Reviewer 3"
               />
               <div>
                 <p className={classes.commentor_name}>Yel Malichenko</p>
@@ -132,8 +132,8 @@ const Comments = () => {
               <img
                 src={Comment4Img.src}
                 className={classes.commentor_photo}
-                title="telegram"
                 loading="lazy"
+                alt="Reviewer 4"
               />
               <div>
                 <p className={classes.commentor_name}>Elizabeth Zhyrova</p>
@@ -153,7 +153,7 @@ const Comments = () => {
               <FullStar className={classes.star} />
             </div>
             <p className={classes.comment_text}>
-              “Tinder is an amazing bot. It&apos;s easy to use, very convenient
+              “ITinder is an amazing bot. It&apos;s easy to use, very convenient
               functionality. I received really cool candidates, who went through
               the entire hiring process. I actively use it in our work, and
               totally recommend it!”
@@ -162,8 +162,8 @@ const Comments = () => {
               <img
                 src={Comment5Img.src}
                 className={classes.commentor_photo}
-                title="telegram"
                 loading="lazy"
+                alt="Reviewer 5"
               />
               <div>
                 <p className={classes.commentor_name}>Yana Martyniuk</p>
@@ -189,8 +189,8 @@ const Comments = () => {
               <img
                 src={Comment6Img.src}
                 className={classes.commentor_photo}
-                title="telegram"
                 loading="lazy"
+                alt="Reviewer 6"
               />
               <div>
                 <p className={classes.commentor_name}>Sergiy Khomchenko</p>

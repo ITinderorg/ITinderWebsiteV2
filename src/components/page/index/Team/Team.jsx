@@ -13,7 +13,7 @@ const Team = () => {
     <div className={classes.back}>
       <Container className={classes.container}>
         <Row className={"text-center " + classes.title_container}>
-          <h3>Our team</h3>
+          <h2>Our team</h2>
         </Row>
         <Row>
           <Col
@@ -26,10 +26,10 @@ const Team = () => {
               <img
                 src={KateImg.src}
                 className={classes.image}
-                title="telegram"
                 loading="lazy"
+                alt="Kate Riabova ITinder"
               />
-              <h5>Kate Riabova</h5>
+              <h3>Kate Riabova</h3>
               <p>Founder & IT-recruiter</p>
               <a
                 href="https://www.linkedin.com/in/kateryna-ryabova-01a90a202/"
@@ -50,10 +50,10 @@ const Team = () => {
               <img
                 src={AndriiImg.src}
                 className={classes.image}
-                title="telegram"
                 loading="lazy"
+                alt="Andrii Borysenko ITinder"
               />
-              <h5>Andrii Borysenko</h5>
+              <h3>Andrii Borysenko</h3>
               <p>Founder & CEO</p>
               <a
                 href="https://www.linkedin.com/in/andrii-borysenko-68a8a518a/"
@@ -74,10 +74,10 @@ const Team = () => {
               <img
                 src={VladImg.src}
                 className={classes.image}
-                title="telegram"
                 loading="lazy"
+                alt="Vladyslav Dubovyi ITinder"
               />
-              <h5>Vladyslav Dubovyi</h5>
+              <h3>Vladyslav Dubovyi</h3>
               <p>Front-End Engineer</p>
               <a
                 href="https://www.linkedin.com/in/vladyslav-dubovyi/"
@@ -101,10 +101,10 @@ const Team = () => {
               <img
                 src={YuriiImg.src}
                 className={classes.image}
-                title="telegram"
                 loading="lazy"
+                alt="Yurii Voskoboinyk ITinder"
               />
-              <h5>Yurii Voskoboinyk</h5>
+              <h3>Yurii Voskoboinyk</h3>
               <p>Marketing</p>
               <a
                 href="https://www.linkedin.com/in/yurii-voskoboinyk/"
@@ -125,10 +125,10 @@ const Team = () => {
               <img
                 src={UstymImg.src}
                 className={classes.image}
-                title="telegram"
                 loading="lazy"
+                alt="Ustym Manko ITinder"
               />
-              <h5>Ustym Manko</h5>
+              <h3>Ustym Manko</h3>
               <p>Sales</p>
               <a
                 href="https://www.linkedin.com/in/ustymmanko/"

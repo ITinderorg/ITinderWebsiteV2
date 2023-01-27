@@ -18,13 +18,13 @@ const HowItWorks = () => {
             <img
               src={FirstImg.src}
               className={classes.start_image}
-              title="telegram"
               loading="lazy"
+              alt="ITinder chat-bot"
             />
           </Col>
           <Col lg={7} md={6} sm={12} className={classes.start_text}>
             <div className="pe-lg-5 pe-md-5">
-              <h3>ITinder - bot</h3>
+              <h2>ITinder - bot</h2>
               <p>
                 Simple recruitment through Telegram. <br />
                 Press Start to begin!
@@ -36,10 +36,10 @@ const HowItWorks = () => {
         <Row>
           <Col lg={6} md={6} sm={12} className={classes.second_text}>
             <div>
-              <h3>
+              <h2>
                 Are you a recruiter <br /> and looking for IT <br />
                 specialists?
-              </h3>
+              </h2>
               <p>
                 Fill the vacancy, get a match from the candidate,
                 <br /> hire successfully{" "}
@@ -50,8 +50,8 @@ const HowItWorks = () => {
             <img
               src={SecondImg.src}
               className={classes.second_image}
-              title="telegram"
               loading="lazy"
+              alt="ITinder chat-bot for recruiters"
             />
           </Col>
         </Row>
@@ -60,14 +60,14 @@ const HowItWorks = () => {
             <img
               src={ThirdImg.src}
               className={classes.third_image}
-              title="telegram"
               loading="lazy"
+              alt="ITinder chat-bot for candidates"
             />
             <Dots className={classes.dots} />
           </Col>
           <Col lg={7} md={6} sm={12} className={classes.start_text}>
             <div className="pe-lg-5 pe-md-5">
-              <h3>Are you a candidate?</h3>
+              <h2>Are you a candidate?</h2>
               <p>Fill out the form - Get a match - Receive an offer</p>
             </div>
           </Col>

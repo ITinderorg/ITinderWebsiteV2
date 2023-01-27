@@ -30,7 +30,7 @@ const Pricing = () => {
     <>
       <Container className={classes.container}>
         <Row className={"text-center " + classes.title_container}>
-          <h3>Pricing for recruiter</h3>
+          <h2>Pricing for recruiter</h2>
           <p>
             Subscription is based on the length of our agreement, <br /> the
             longer you stay with us - the less you pay. <br /> Candidates can
@@ -54,7 +54,14 @@ const Pricing = () => {
           })}
           <Col lg md sm={12} className={classes.item_container}>
             <p className={classes.item_title}>Enterprise</p>
-            <a className={classes.item_link}>Contact Us</a>
+            <a
+              className={classes.item_link}
+              href="https://t.me/katrine_ryabova"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Contact Us
+            </a>
           </Col>
         </Row>
       </Container>

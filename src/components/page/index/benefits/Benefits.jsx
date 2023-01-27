@@ -12,10 +12,16 @@ const Benefits = () => {
       <Row>
         <Col lg={4} md={4} sm={12} className={classes.item_container}>
           <i>
-            <img src={Telegram.src} width={46} height={46} />
+            <img
+              src={Telegram.src}
+              width={46}
+              height={46}
+              alt="Telegram"
+              loading="lazy"
+            />
           </i>
-          <h5>Fast recruitment process</h5>
-          <p>
+          <p className={classes.title}>Fast recruitment process</p>
+          <p className={classes.text}>
             A few clicks and offers <br /> in your Telegram
           </p>
         </Col>
@@ -23,8 +29,8 @@ const Benefits = () => {
           <i className={classes.puzzle}>
             <Puzzle />
           </i>
-          <h5>Smart match solution</h5>
-          <p>
+          <p className={classes.title}>Smart match solution</p>
+          <p className={classes.text}>
             Allows you to find the best <br />
             candidates within a seconds
           </p>
@@ -33,8 +39,8 @@ const Benefits = () => {
           <i>
             <Planet />
           </i>
-          <h5>Worldwide bot</h5>
-          <p>
+          <p className={classes.title}>Worldwide bot</p>
+          <p className={classes.text}>
             Candidates and vacancies <br />
             from all world
           </p>

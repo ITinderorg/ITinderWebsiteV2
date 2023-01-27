@@ -30,9 +30,10 @@ const Header = ({ refs }) => {
           }}
         >
           <img
-            alt=""
+            alt="ITinder logo"
             src={Logo.src}
             className={"d-inline-block align-top " + classes.logo}
+            loading="lazy"
           />
           <div className={classes.born_ukraine}>
             <UAFlag className={classes.born_ukraine_logo} />

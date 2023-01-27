@@ -49,11 +49,21 @@ export default function Home() {
         />
         <meta
           name="description"
-          content="Перший Український бот для пошуку роботи в IT!
-          Ти рекрутер і в пошуку IT - шників? Заповнюй вакансію, отримай матч від кандидата, чекай на CV!"
+          content="The first bot for finding a job in IT! Are you a recruiter and looking for IT specialists? Create a vacancy - Get a match - Hire!"
         />
         <link rel="canonical" href="/" />
-        <link rel="alternate" href="/" hrefLang="ua" />
+        <link rel="alternate" href="/" hrefLang="en-US" />
+        <meta name="theme-color" content="#6275F6" />
+        <link rel="apple-touch-icon" href="favicon.ico"></link>
+
+        <meta property="og:title" content="ITinder" />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content="The first bot for finding a job in IT! Are you a recruiter and looking for IT specialists? Create a vacancy - Get a match - Hire!"
+        />
+        <meta property="og:image" content="https://itinder.tech/favicon.ico" />
+        <meta property="og:url" content="https://itinder.tech/" />
       </Head>
 
       <IndexPage data={data} />

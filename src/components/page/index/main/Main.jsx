@@ -48,8 +48,7 @@ const Main = ({ secRef }) => {
           <img
             src={Img.src}
             className={classes.image}
-            alt="What can this bot do?"
-            title="telegram"
+            alt="What can ITinder bot do?"
             loading="lazy"
           />
           <Dots className={classes.dots} />
