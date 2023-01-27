@@ -21,8 +21,8 @@ const HowItWorks = () => {
               className={classes.start_image}
               loading="lazy"
               alt="ITinder chat-bot"
-              height={670}
-              width={357}
+              height={1042}
+              width={557}
             />
           </Col>
           <Col lg={7} md={6} sm={12} className={classes.start_text}>
@@ -55,8 +55,8 @@ const HowItWorks = () => {
               className={classes.second_image}
               loading="lazy"
               alt="ITinder chat-bot for recruiters"
-              height={660}
-              width={519}
+              height={1042}
+              width={818}
             />
           </Col>
         </Row>
@@ -67,8 +67,8 @@ const HowItWorks = () => {
               className={classes.third_image}
               loading="lazy"
               alt="ITinder chat-bot for candidates"
-              height={650}
-              width={349}
+              height={1042}
+              width={557}
             />
             <Image
               src={Dots.src}
