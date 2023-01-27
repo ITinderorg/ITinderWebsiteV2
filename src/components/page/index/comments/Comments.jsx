@@ -32,7 +32,6 @@ const Comments = () => {
             clickable: true,
           }}
           loop={true}
-          loopFillGroupWithBlank={true}
           modules={[Pagination, Navigation]}
           className={classes.swiper}
         >
@@ -99,7 +98,6 @@ const Comments = () => {
             <p className={classes.comment_text}>
               “I really liked using the bot, it was super easy, fast, and
               convenient! The whole experience was smooth and user-friendly.
-              I&apos;ve got a new job already, but when I want to change it
               I&apos;ll definitely use the service again!”
             </p>
             <div className={classes.commentor}>
@@ -153,10 +151,9 @@ const Comments = () => {
               <FullStar className={classes.star} />
             </div>
             <p className={classes.comment_text}>
-              “ITinder is an amazing bot. It&apos;s easy to use, very convenient
-              functionality. I received really cool candidates, who went through
-              the entire hiring process. I actively use it in our work, and
-              totally recommend it!”
+              “ITinder is an amazing bot. It&apos;s easy to use. I received
+              really cool candidates, who went through the entire hiring
+              process. I actively use it in our work, and totally recommend it!”
             </p>
             <div className={classes.commentor}>
               <img

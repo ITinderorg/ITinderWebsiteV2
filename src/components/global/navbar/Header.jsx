@@ -29,11 +29,13 @@ const Header = ({ refs }) => {
             });
           }}
         >
-          <img
+          <Image
             alt="ITinder logo"
             src={Logo.src}
             className={"d-inline-block align-top " + classes.logo}
-            loading="lazy"
+            width={145}
+            height={61}
+            priority
           />
           <div className={classes.born_ukraine}>
             <UAFlag className={classes.born_ukraine_logo} />
