@@ -32,7 +32,7 @@ const Pricing = () => {
         <Row className={"text-center " + classes.title_container}>
           <h2>Pricing for recruiter</h2>
           <p>
-            Subscription is based on the length of our agreement, <br /> the
+            Subscription is based on the term of our agreement, <br /> the
             longer you stay with us - the less you pay. <br /> Candidates can
             use service free of charge
           </p>

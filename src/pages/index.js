@@ -15,14 +15,19 @@ export default function Home() {
   });
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    fetch("https://itinder.azurewebsites.net/itinder/getstat")
+    fetch("https://itinder-app.azurewebsites.net/api/RetrieveStatistics", {
+      method: "GET",
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+      },
+    })
       .then((res) => res.json())
       .then((data) => {
         setData({
           stats: {
-            candidates: data.candidatesCount,
-            matches: data.matchesCount,
-            recruiters: data.recruitersCount,
+            candidates: data.countCandidates,
+            matches: data.countMatches,
+            recruiters: data.countRecruiters,
           },
         });
         setIsLoading(false);
