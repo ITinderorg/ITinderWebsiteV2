@@ -73,11 +73,11 @@
   border-radius: 9px;
   margin-left: 18px;
 
-  color: #6275f6;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 18px;
-  text-align: center;
+  color: #6275f6 !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
+  text-align: center !important;
 }
 
 @media (max-width: 1642px) {
@@ -85,7 +85,7 @@
     margin: 50px 123px !important;
   }
   .image {
-    height: 444px;
+    height: 449px;
     width: 545px;
   }
 }
@@ -109,7 +109,7 @@
     right: 25%;
   }
   .image {
-    height: 404px;
+    height: 416px;
     width: 505px;
   }
 }
@@ -120,7 +120,7 @@
     top: 120px;
   }
   .image {
-    height: 364px;
+    height: 400px;
     width: 485px;
   }
 }
@@ -131,7 +131,7 @@
     top: 120px;
   }
   .image {
-    height: 444px;
+    height: 433px;
     width: 525px;
   }
   .text_section {
@@ -152,7 +152,7 @@
     padding-left: 0px;
   }
   .image {
-    height: 294px;
+    height: 280px;
     width: 340px;
   }
   .container {
@@ -191,7 +191,7 @@
     margin: 0px 23px !important;
   }
   .image {
-    height: 254px;
+    height: 255px;
     width: 310px;
   }
 }

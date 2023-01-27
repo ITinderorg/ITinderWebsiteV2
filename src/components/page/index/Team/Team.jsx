@@ -7,6 +7,7 @@ import AndriiImg from "../../../../assets/images/andrii.png";
 import VladImg from "../../../../assets/images/vlad.png";
 import YuriiImg from "../../../../assets/images/yurii.png";
 import UstymImg from "../../../../assets/images/ustym.png";
+import Image from "next/image";
 
 const Team = () => {
   return (
@@ -23,11 +24,13 @@ const Team = () => {
             className={classes.person_container + " justify-content-lg-end"}
           >
             <div className={classes.item_container}>
-              <img
+              <Image
                 src={KateImg.src}
                 className={classes.image}
                 loading="lazy"
                 alt="Kate Riabova ITinder"
+                height={310}
+                width={255}
               />
               <h3>Kate Riabova</h3>
               <p>Founder & IT-recruiter</p>
@@ -47,11 +50,13 @@ const Team = () => {
             className={classes.person_container + " w-80"}
           >
             <div className={classes.item_container}>
-              <img
+              <Image
                 src={AndriiImg.src}
                 className={classes.image}
                 loading="lazy"
                 alt="Andrii Borysenko ITinder"
+                height={310}
+                width={255}
               />
               <h3>Andrii Borysenko</h3>
               <p>Founder & CEO</p>
@@ -71,11 +76,13 @@ const Team = () => {
             className={classes.person_container + " justify-content-lg-start"}
           >
             <div className={classes.item_container}>
-              <img
+              <Image
                 src={VladImg.src}
                 className={classes.image}
                 loading="lazy"
                 alt="Vladyslav Dubovyi ITinder"
+                height={310}
+                width={255}
               />
               <h3>Vladyslav Dubovyi</h3>
               <p>Front-End Engineer</p>
@@ -98,11 +105,13 @@ const Team = () => {
             }
           >
             <div className={classes.item_container}>
-              <img
+              <Image
                 src={YuriiImg.src}
                 className={classes.image}
                 loading="lazy"
                 alt="Yurii Voskoboinyk ITinder"
+                height={310}
+                width={255}
               />
               <h3>Yurii Voskoboinyk</h3>
               <p>Marketing</p>
@@ -122,11 +131,13 @@ const Team = () => {
             className={classes.person_container + " ms-lg-3"}
           >
             <div className={classes.item_container}>
-              <img
+              <Image
                 src={UstymImg.src}
                 className={classes.image}
                 loading="lazy"
                 alt="Ustym Manko ITinder"
+                height={310}
+                width={255}
               />
               <h3>Ustym Manko</h3>
               <p>Sales</p>
