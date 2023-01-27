@@ -1,8 +1,9 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Image from "next/image";
 import classes from "./HowItWorks.module.scss";
-import Dots from "../../../global/svgs/Dots";
+import Dots from "../../../../assets/images/dots.png";
 import Arrow from "../../../global/svgs/Arrow";
 
 import FirstImg from "../../../../assets/images/chat_start.png";
@@ -15,11 +16,13 @@ const HowItWorks = () => {
       <Container className={classes.container}>
         <Row className={classes.item_container}>
           <Col lg={5} md={6} sm={12} className={classes.start_image_container}>
-            <img
+            <Image
               src={FirstImg.src}
               className={classes.start_image}
               loading="lazy"
               alt="ITinder chat-bot"
+              height={670}
+              width={357}
             />
           </Col>
           <Col lg={7} md={6} sm={12} className={classes.start_text}>
@@ -47,23 +50,34 @@ const HowItWorks = () => {
             </div>
           </Col>
           <Col lg={6} md={6} sm={12} className={classes.second_image_container}>
-            <img
+            <Image
               src={SecondImg.src}
               className={classes.second_image}
               loading="lazy"
               alt="ITinder chat-bot for recruiters"
+              height={660}
+              width={519}
             />
           </Col>
         </Row>
         <Row className={classes.item_container}>
           <Col lg={5} md={6} sm={12} className={classes.start_image_container}>
-            <img
+            <Image
               src={ThirdImg.src}
               className={classes.third_image}
               loading="lazy"
               alt="ITinder chat-bot for candidates"
+              height={650}
+              width={349}
             />
-            <Dots className={classes.dots} />
+            <Image
+              src={Dots.src}
+              className={classes.dots}
+              height={500}
+              width={500}
+              alt="Dots"
+              priority
+            />
           </Col>
           <Col lg={7} md={6} sm={12} className={classes.start_text}>
             <div className="pe-lg-5 pe-md-5">

@@ -2,9 +2,10 @@ import classes from "./Main.module.scss";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Dots from "../../../global/svgs/Dots";
 
 import Img from "../../../../assets/images/chat_main.png";
+import Dots from "../../../../assets/images/dots.png";
+import Image from "next/image";
 
 const Main = ({ secRef }) => {
   return (
@@ -31,7 +32,7 @@ const Main = ({ secRef }) => {
             >
               Get started
             </a>
-            <a
+            <p
               className={classes.info_button}
               onClick={() => {
                 window.scrollTo({
@@ -41,17 +42,26 @@ const Main = ({ secRef }) => {
               }}
             >
               Learn How It Works
-            </a>
+            </p>
           </div>
         </Col>
         <Col lg={6} md={12} sm={12} className={classes.image_container}>
-          <img
+          <Image
             src={Img.src}
             className={classes.image}
             alt="What can ITinder bot do?"
-            loading="lazy"
+            height={514}
+            width={615}
+            priority
           />
-          <Dots className={classes.dots} />
+          <Image
+            src={Dots.src}
+            className={classes.dots}
+            height={500}
+            width={500}
+            alt="Dots"
+            priority
+          />
         </Col>
       </Row>
     </Container>

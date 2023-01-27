@@ -2,6 +2,7 @@ import classes from "./Roadmap.module.scss";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Image from "next/image";
 
 import Img from "../../../../assets/images/roadmap.png";
 
@@ -16,11 +17,13 @@ const Roadmap = () => {
         </p>
       </Row>
       <Row>
-        <img
+        <Image
           src={Img.src}
           className={classes.image}
           loading="lazy"
           alt="ITinder roadmap"
+          height={989}
+          width={1586}
         />
       </Row>
     </Container>
