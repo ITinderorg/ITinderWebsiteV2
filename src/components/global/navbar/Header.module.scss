@@ -128,12 +128,10 @@
 .lang_button {
   height: 44px;
   border: 0;
-  background-color: #fff;
-  background-color: lightgray;
   border-radius: 5px 0px 0px 5px;
+  transition: all 0.5s;
 }
 .lang_button + .ua {
-  background-color: #6275f6;
   color: #fff;
   border-radius: 0px 5px 5px 0px;
 }

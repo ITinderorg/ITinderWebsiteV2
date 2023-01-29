@@ -7,8 +7,13 @@ import classes from "./Header.module.scss";
 import UAFlag from "../svgs/UAFlag";
 
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 const Header = ({ refs }) => {
+  let [colorEN, setColorEN] = useState("#6275f6");
+  let [colorUA, setColorUA] = useState("#D3D3D3");
+  let [colorTextEN, setColorTextEN] = useState("#fff");
+  let [colorTextUA, setColorTextUA] = useState("#000");
   const { t, i18n } = useTranslation();
 
   const scrollToSection = (e, elementRef) => {
@@ -94,20 +99,35 @@ const Header = ({ refs }) => {
         </Nav>
 
         <Nav className={classes.nav_button_container}>
-          <Nav.Link>
+          <Nav.Link
+            href="/"
+            onClick={(e) => {
+              e.preventDefault();
+            }}
+          >
             <button
               onClick={() => {
                 i18n.changeLanguage("en");
+                setColorEN("#6275f6");
+                setColorUA("#D3D3D3");
+                setColorTextEN("#fff");
+                setColorTextUA("#000");
               }}
               className={classes.lang_button}
+              style={{ backgroundColor: colorEN, color: colorTextEN }}
             >
               EN
             </button>
             <button
               onClick={() => {
                 i18n.changeLanguage("ua");
+                setColorEN("#D3D3D3");
+                setColorUA("#6275f6");
+                setColorTextEN("#000");
+                setColorTextUA("#fff");
               }}
               className={classes.lang_button + " " + classes.ua}
+              style={{ backgroundColor: colorUA, color: colorTextUA }}
             >
               UA
             </button>
