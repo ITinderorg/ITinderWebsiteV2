@@ -10,7 +10,10 @@ import FirstImg from "../../../../assets/images/chat_start.png";
 import SecondImg from "../../../../assets/images/chat_second.png";
 import ThirdImg from "../../../../assets/images/chat_third.png";
 
+import { useTranslation } from "react-i18next";
+
 const HowItWorks = () => {
+  const { t, i18n } = useTranslation();
   return (
     <section className={classes.back}>
       <Container className={classes.container}>
@@ -27,10 +30,11 @@ const HowItWorks = () => {
           </Col>
           <Col lg={7} md={6} sm={12} className={classes.start_text}>
             <div className="pe-lg-5 pe-md-5">
-              <h2>ITinder - bot</h2>
+              <h2>{t("ITinder - bot")}</h2>
               <p>
-                Simple recruitment through Telegram. <br />
-                Press Start to begin!
+                {t(
+                  "Simple recruitment through Telegram. \n Press Start to begin!"
+                )}
               </p>
             </div>
             <Arrow className={classes.arrow} />
@@ -40,12 +44,12 @@ const HowItWorks = () => {
           <Col lg={6} md={6} sm={12} className={classes.second_text}>
             <div>
               <h2>
-                Are you a recruiter <br /> and looking for IT <br />
-                specialists?
+                {t("Are you a recruiter \n and looking for IT \n specialists?")}
               </h2>
               <p>
-                Fill the vacancy, get a match from the candidate,
-                <br /> hire successfully{" "}
+                {t(
+                  "Fill the vacancy - Get a match from the candidate \n - Hire successfully"
+                )}
               </p>
             </div>
           </Col>
@@ -81,8 +85,8 @@ const HowItWorks = () => {
           </Col>
           <Col lg={7} md={6} sm={12} className={classes.start_text}>
             <div className="pe-lg-5 pe-md-5">
-              <h2>Are you a candidate?</h2>
-              <p>Fill out the form - Get a match - Receive an offer</p>
+              <h2>{t("Are you a candidate?")}</h2>
+              <p>{t("Fill out the form - Get a match - Receive an offer")}</p>
             </div>
           </Col>
         </Row>

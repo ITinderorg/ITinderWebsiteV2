@@ -9,7 +9,10 @@ import YuriiImg from "../../../../assets/images/yurii.png";
 import UstymImg from "../../../../assets/images/ustym.png";
 import Image from "next/image";
 
+import { useTranslation } from "react-i18next";
+
 const Team = () => {
+  const { t, i18n } = useTranslation();
   return (
     <div className={classes.back}>
       <Container className={classes.container}>
@@ -32,7 +35,7 @@ const Team = () => {
                 height={310}
                 width={255}
               />
-              <h3>Kate Riabova</h3>
+              <h3>{t("Kate Riabova")}</h3>
               <p>Founder & IT-recruiter</p>
               <a
                 href="https://www.linkedin.com/in/kateryna-ryabova-01a90a202/"
@@ -58,7 +61,7 @@ const Team = () => {
                 height={310}
                 width={255}
               />
-              <h3>Andrii Borysenko</h3>
+              <h3>{t("Andrii Borysenko")}</h3>
               <p>Founder & CEO</p>
               <a
                 href="https://www.linkedin.com/in/andrii-borysenko-68a8a518a/"
@@ -84,7 +87,7 @@ const Team = () => {
                 height={310}
                 width={255}
               />
-              <h3>Vladyslav Dubovyi</h3>
+              <h3>{t("Vladyslav Dubovyi")}</h3>
               <p>Front-End Engineer</p>
               <a
                 href="https://www.linkedin.com/in/vladyslav-dubovyi/"
@@ -113,7 +116,7 @@ const Team = () => {
                 height={310}
                 width={255}
               />
-              <h3>Yurii Voskoboinyk</h3>
+              <h3>{t("Yurii Voskoboinyk")}</h3>
               <p>Marketing</p>
               <a
                 href="https://www.linkedin.com/in/yurii-voskoboinyk/"
@@ -139,7 +142,7 @@ const Team = () => {
                 height={310}
                 width={255}
               />
-              <h3>Ustym Manko</h3>
+              <h3>{t("Ustym Manko")}</h3>
               <p>Sales</p>
               <a
                 href="https://www.linkedin.com/in/ustymmanko/"

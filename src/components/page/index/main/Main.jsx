@@ -11,7 +11,6 @@ import { useTranslation } from "react-i18next";
 
 const Main = ({ secRef }) => {
   const { t, i18n } = useTranslation();
-
   return (
     <Container fluid className={classes.container}>
       <Row>
@@ -22,17 +21,18 @@ const Main = ({ secRef }) => {
           className={classes.text_section + " d-flex justify-content-center"}
         >
           <h3>ITinder-bot</h3>
-          <h1>{t("title")}</h1>
+          <h1>{t("Quickly find your \nperfect position match in IT")}</h1>
           <p>
-            Forget the old rules. You can have the best people.
-            <br /> Right now. Right here.
+            {t(
+              "Forget the old rules. You can have the best people.\n Right now. Right here."
+            )}
           </p>
           <div className={classes.buttons_container}>
             <a
               className={classes.start_button}
               href="https://t.me/ITinder_jobs_bot"
             >
-              Get started
+              {t("Get started")}
             </a>
             <p
               className={classes.info_button}
@@ -43,7 +43,7 @@ const Main = ({ secRef }) => {
                 });
               }}
             >
-              Learn How It Works
+              {t("Learn How It Works")}
             </p>
           </div>
         </Col>

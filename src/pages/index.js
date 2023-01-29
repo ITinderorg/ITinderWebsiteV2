@@ -54,7 +54,7 @@ export default function Home() {
           content="The first bot for finding a job in IT! Are you a recruiter and looking for IT specialists? Create a vacancy - Get a match - Hire!"
         />
         <link rel="canonical" href="https://itinder.tech/" />
-        <link rel="alternate" href="https://itinder.tech/" hrefLang="en-US" />
+        <link rel="alternate" href="https://itinder.tech/" hrefLang="en" />
         <meta name="theme-color" content="#6275F6" />
         <link rel="apple-touch-icon" href="favicon.ico"></link>
 
