@@ -17,7 +17,7 @@ const Team = () => {
     <div className={classes.back}>
       <Container className={classes.container}>
         <Row className={"text-center " + classes.title_container}>
-          <h2>Our team</h2>
+          <h2>{t("Our team")}</h2>
         </Row>
         <Row>
           <Col

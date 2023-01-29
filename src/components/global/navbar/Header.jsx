@@ -74,7 +74,9 @@ const Header = ({ refs }) => {
             </Nav.Link>
             <Nav.Link
               href="/"
-              className={"p-sm-2 " + classes.nav_text}
+              className={
+                "p-sm-2 " + classes.nav_text + " " + classes.text_collapse_2
+              }
               onClick={(e) => scrollToSection(e, refs.roadmap)}
             >
               {t("Roadmap")}

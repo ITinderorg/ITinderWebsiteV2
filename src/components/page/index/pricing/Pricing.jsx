@@ -63,7 +63,7 @@ const Pricing = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Contact Us
+              {t("Contact Us")}
             </a>
           </Col>
         </Row>
