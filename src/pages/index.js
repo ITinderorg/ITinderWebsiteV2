@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import IndexPage from "../components/page/index/IndexPage";
 
 export default function Home() {
@@ -67,7 +67,9 @@ export default function Home() {
         <meta property="og:image" content="https://itinder.tech/favicon.ico" />
         <meta property="og:url" content="https://itinder.tech/" />
       </Head>
-      <IndexPage data={data} />
+      <Suspense fallback={<></>}>
+        <IndexPage data={data} />
+      </Suspense>
     </>
   );
 }
