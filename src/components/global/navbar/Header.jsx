@@ -6,7 +6,11 @@ import Image from "next/image";
 import classes from "./Header.module.scss";
 import UAFlag from "../svgs/UAFlag";
 
+import { useTranslation } from "react-i18next";
+
 const Header = ({ refs }) => {
+  const { t, i18n } = useTranslation();
+
   const scrollToSection = (e, elementRef) => {
     e.preventDefault();
     window.scrollTo({
@@ -88,6 +92,24 @@ const Header = ({ refs }) => {
         </Nav>
 
         <Nav className={classes.nav_button_container}>
+          <Nav.Link>
+            <button
+              onClick={() => {
+                i18n.changeLanguage("en");
+              }}
+              className={classes.lang_button}
+            >
+              EN
+            </button>
+            <button
+              onClick={() => {
+                i18n.changeLanguage("ua");
+              }}
+              className={classes.lang_button + " " + classes.ua}
+            >
+              UA
+            </button>
+          </Nav.Link>
           <Nav.Link
             href="https://t.me/ITinder_jobs_bot"
             className={"p-sm-2 " + classes.nav_button}

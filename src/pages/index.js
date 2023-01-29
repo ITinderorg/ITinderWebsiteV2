@@ -1,8 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
 import { useEffect, useState } from "react";
-import Footer from "../components/global/footer/Footer";
-import Header from "../components/global/navbar/Header";
 import IndexPage from "../components/page/index/IndexPage";
 
 export default function Home() {
@@ -70,7 +67,6 @@ export default function Home() {
         <meta property="og:image" content="https://itinder.tech/favicon.ico" />
         <meta property="og:url" content="https://itinder.tech/" />
       </Head>
-
       <IndexPage data={data} />
     </>
   );

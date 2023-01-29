@@ -12,6 +12,8 @@
 }
 .nav_button_container {
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 .nav_button {
   background: #6275f6;
@@ -19,6 +21,7 @@
   color: #ffff;
   padding: 13px 21px !important;
   margin-left: 30px;
+  height: 46px;
 
   font-weight: 700;
   font-size: 15px;
@@ -115,4 +118,17 @@
   .nav_button {
     margin-left: 5px;
   }
+}
+
+.lang_button {
+  height: 44px;
+  border: 0;
+  background-color: #fff;
+  background-color: lightgray;
+  border-radius: 5px 0px 0px 5px;
+}
+.lang_button + .ua {
+  background-color: #6275f6;
+  color: #fff;
+  border-radius: 0px 5px 5px 0px;
 }

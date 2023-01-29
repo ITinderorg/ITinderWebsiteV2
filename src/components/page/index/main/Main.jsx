@@ -7,7 +7,7 @@ import Img from "../../../../assets/images/chat_main.png";
 import Dots from "../../../../assets/images/dots.png";
 import Image from "next/image";
 
-import { useTranslation, Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const Main = ({ secRef }) => {
   const { t, i18n } = useTranslation();
@@ -21,23 +21,8 @@ const Main = ({ secRef }) => {
           sm={12}
           className={classes.text_section + " d-flex justify-content-center"}
         >
-          <button
-            onClick={() => {
-              i18n.changeLanguage("ua");
-            }}
-            style={{ height: "200px" }}
-          />
-          <button
-            onClick={() => {
-              i18n.changeLanguage("en");
-            }}
-            style={{ height: "200px" }}
-          />
-          <h1>{t("description.part1")}</h1>
           <h3>ITinder-bot</h3>
-          <h1>
-            Quickly find your <br /> perfect position match in IT
-          </h1>
+          <h1>{t("title")}</h1>
           <p>
             Forget the old rules. You can have the best people.
             <br /> Right now. Right here.
