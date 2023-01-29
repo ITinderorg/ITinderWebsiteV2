@@ -89,7 +89,7 @@ const Header = ({ refs }) => {
 
         <Nav className={classes.nav_button_container}>
           <Nav.Link
-            href="https://t.me/i_tinder_bot"
+            href="https://t.me/ITinder_jobs_bot"
             className={"p-sm-2 " + classes.nav_button}
           >
             Get started

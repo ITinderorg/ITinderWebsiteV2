@@ -53,7 +53,11 @@ const Footer = () => {
               </a>
             </Col>
             <Col className="d-flex justify-content-center">
-              <a href="https://t.me/I_Tinder" target="_blank" rel="noreferrer">
+              <a
+                href="https://t.me/ITinder_jobs_bot"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaTelegram style={{ color: "white", height: 20, width: 20 }} />
               </a>
             </Col>

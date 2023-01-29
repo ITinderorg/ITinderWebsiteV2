@@ -28,7 +28,7 @@ const Main = ({ secRef }) => {
           <div className={classes.buttons_container}>
             <a
               className={classes.start_button}
-              href="https://t.me/i_tinder_bot"
+              href="https://t.me/ITinder_jobs_bot"
             >
               Get started
             </a>
