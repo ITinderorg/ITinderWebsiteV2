@@ -4,7 +4,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import CountUp from "react-countup";
 
+import { useTranslation } from "react-i18next";
+
 const Counter = ({ stats }) => {
+  const { t, i18n } = useTranslation();
   return (
     <section className={classes.back}>
       <Container className={classes.container}>
@@ -22,7 +25,7 @@ const Counter = ({ stats }) => {
               >
                 {({ countUpRef }) => <strong ref={countUpRef} />}
               </CountUp>
-              <p>Candidates</p>
+              <p>{t("Candidates")}</p>
             </Col>
             <Col lg={4} md={4} sm={12}>
               <CountUp
@@ -34,7 +37,7 @@ const Counter = ({ stats }) => {
               >
                 {({ countUpRef }) => <strong ref={countUpRef} />}
               </CountUp>
-              <p>Matches</p>
+              <p>{t("Matches")}</p>
             </Col>
             <Col lg={4} md={4} sm={12}>
               <CountUp
@@ -46,7 +49,7 @@ const Counter = ({ stats }) => {
               >
                 {({ countUpRef }) => <strong ref={countUpRef} />}
               </CountUp>
-              <p>Recruiters</p>
+              <p>{t("Recruiters")}</p>
             </Col>
           </Row>
         )}

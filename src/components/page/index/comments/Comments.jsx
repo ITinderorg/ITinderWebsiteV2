@@ -18,11 +18,14 @@ import Comment4Img from "../../../../assets/images/comment_4.png";
 import Comment5Img from "../../../../assets/images/comment_5.png";
 import Comment6Img from "../../../../assets/images/comment_6.png";
 
+import { useTranslation } from "react-i18next";
+
 const Comments = () => {
+  const { t, i18n } = useTranslation();
   return (
     <Container className={classes.container} fluid>
       <Row className={"text-center " + classes.title_container}>
-        <h2>What users say about ITinder</h2>
+        <h2>{t("What users say about ITinder")}</h2>
       </Row>
       <Row className={classes.comments_container}>
         <Swiper
@@ -44,8 +47,11 @@ const Comments = () => {
               <HalfStar className={classes.star} />
             </div>
             <p className={classes.comment_text}>
-              “It&apos;s very convenient to use ITinder because job search and
-              communication with recruiters are done simply on the phone.”
+              “
+              {t(
+                "It's very convenient to use ITinder because job search and communication with recruiters are done simply on the phone."
+              )}
+              ”
             </p>
             <div className={classes.commentor}>
               <img
@@ -55,7 +61,7 @@ const Comments = () => {
                 alt="Reviewer 1"
               />
               <div>
-                <p className={classes.commentor_name}>Maria T.</p>
+                <p className={classes.commentor_name}>{t("Maria T.")}</p>
                 <p className={classes.commentor_position}>SMM manager</p>
               </div>
             </div>
@@ -70,8 +76,11 @@ const Comments = () => {
               <FullStar className={classes.star} />
             </div>
             <p className={classes.comment_text}>
-              “A great bot for finding IT jobs. Everything is clear and
-              understandable🙂”
+              “
+              {t(
+                "A great bot for finding IT jobs. Everything is clear and understandable🙂"
+              )}
+              ”
             </p>
             <div className={classes.commentor}>
               <img
@@ -81,7 +90,9 @@ const Comments = () => {
                 alt="Reviewer 2"
               />
               <div>
-                <p className={classes.commentor_name}>Evgenia Syniavska</p>
+                <p className={classes.commentor_name}>
+                  {t("Evgenia Syniavska")}
+                </p>
                 <p className={classes.commentor_position}>IT Researcher</p>
               </div>
             </div>
@@ -96,9 +107,11 @@ const Comments = () => {
               <EmptyStar className={classes.star} />
             </div>
             <p className={classes.comment_text}>
-              “I really liked using the bot, it was super easy, fast, and
-              convenient! The whole experience was smooth and user-friendly.
-              I&apos;ll definitely use the service again!”
+              “
+              {t(
+                "I really liked using the bot, it was super easy, fast, and convenient! The whole experience was smooth and user-friendly. I'll definitely use the service again!"
+              )}
+              ”
             </p>
             <div className={classes.commentor}>
               <img
@@ -108,7 +121,7 @@ const Comments = () => {
                 alt="Reviewer 3"
               />
               <div>
-                <p className={classes.commentor_name}>Yel Malichenko</p>
+                <p className={classes.commentor_name}>{t("Yel Malichenko")}</p>
                 <p className={classes.commentor_position}>Project manager</p>
               </div>
             </div>
@@ -123,8 +136,11 @@ const Comments = () => {
               <FullStar className={classes.star} />
             </div>
             <p className={classes.comment_text}>
-              “It was great to have the position closed so quickly.🤩 My
-              recommendations for everyone! I appreciate your help a lot 👍”
+              “
+              {t(
+                "It was great to have the position closed so quickly.🤩 My recommendations for everyone! I appreciate your help a lot 👍"
+              )}
+              ”
             </p>
             <div className={classes.commentor}>
               <img
@@ -134,7 +150,9 @@ const Comments = () => {
                 alt="Reviewer 4"
               />
               <div>
-                <p className={classes.commentor_name}>Elizabeth Zhyrova</p>
+                <p className={classes.commentor_name}>
+                  {t("Elizabeth Zhyrova")}
+                </p>
                 <p className={classes.commentor_position}>
                   Recruitment Researcher
                 </p>
@@ -151,9 +169,11 @@ const Comments = () => {
               <FullStar className={classes.star} />
             </div>
             <p className={classes.comment_text}>
-              “ITinder is an amazing bot. It&apos;s easy to use. I received
-              really cool candidates, who went through the entire hiring
-              process. I actively use it in our work, and totally recommend it!”
+              “
+              {t(
+                "ITinder is an amazing bot. It's easy to use. I received really cool candidates, who went through the entire hiring process. I actively use it in our work, and totally recommend it!"
+              )}
+              ”
             </p>
             <div className={classes.commentor}>
               <img
@@ -163,7 +183,7 @@ const Comments = () => {
                 alt="Reviewer 5"
               />
               <div>
-                <p className={classes.commentor_name}>Yana Martyniuk</p>
+                <p className={classes.commentor_name}>{t("Yana Martyniuk")}</p>
                 <p className={classes.commentor_position}>IT Recruiter</p>
               </div>
             </div>
@@ -178,9 +198,11 @@ const Comments = () => {
               <FullStar className={classes.star} />
             </div>
             <p className={classes.comment_text}>
-              “Simple and intuitive service. Much easier access than other
-              services, though brings the best features from job seeker
-              standpoint, especially the salary filter, which is the best.”
+              “
+              {t(
+                "Simple and intuitive service. Much easier access than other services, though brings the best features from job seeker standpoint, especially the salary filter, which is the best."
+              )}
+              ”
             </p>
             <div className={classes.commentor}>
               <img
@@ -190,7 +212,9 @@ const Comments = () => {
                 alt="Reviewer 6"
               />
               <div>
-                <p className={classes.commentor_name}>Sergiy Khomchenko</p>
+                <p className={classes.commentor_name}>
+                  {t("Sergiy Khomchenko")}
+                </p>
                 <p className={classes.commentor_position}>
                   Senior .NET Software Engineer
                 </p>

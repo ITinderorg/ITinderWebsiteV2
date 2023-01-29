@@ -43,7 +43,7 @@ const Header = ({ refs }) => {
           />
           <div className={classes.born_ukraine}>
             <UAFlag className={classes.born_ukraine_logo} />
-            <p>Born in Ukraine!</p>
+            <p>{t("Born in Ukraine!")}</p>
           </div>
         </Navbar.Brand>
 
@@ -56,28 +56,30 @@ const Header = ({ refs }) => {
               }
               onClick={(e) => scrollToSection(e, refs.howItWorks)}
             >
-              How it works
+              {t("How it works")}
             </Nav.Link>
             <Nav.Link
               href="/"
               className={"p-sm-2 " + classes.nav_text}
               onClick={(e) => scrollToSection(e, refs.pricing)}
             >
-              Pricing
+              {t("Pricing")}
             </Nav.Link>
             <Nav.Link
               href="/"
               className={"p-sm-2 " + classes.nav_text}
               onClick={(e) => scrollToSection(e, refs.testimonials)}
             >
-              Reviews
+              {t("Reviews")}
             </Nav.Link>
             <Nav.Link
               href="/"
-              className={"p-sm-2 " + classes.nav_text}
+              className={
+                "p-sm-2 " + classes.nav_text + " " + classes.text_collapse_2
+              }
               onClick={(e) => scrollToSection(e, refs.roadmap)}
             >
-              Roadmap
+              {t("Roadmap")}
             </Nav.Link>
             <Nav.Link
               href="/"
@@ -86,7 +88,7 @@ const Header = ({ refs }) => {
               }
               onClick={(e) => scrollToSection(e, refs.aboutUs)}
             >
-              About Us
+              {t("About Us")}
             </Nav.Link>
           </Navbar.Collapse>
         </Nav>
@@ -114,7 +116,7 @@ const Header = ({ refs }) => {
             href="https://t.me/ITinder_jobs_bot"
             className={"p-sm-2 " + classes.nav_button}
           >
-            Get started
+            {t("Get started")}
           </Nav.Link>
         </Nav>
       </Container>
