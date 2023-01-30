@@ -107,11 +107,11 @@ const Header = ({ refs }) => {
           >
             <button
               onClick={() => {
-                i18n.changeLanguage("en");
                 setColorEN("#6275f6");
                 setColorUA("#D3D3D3");
                 setColorTextEN("#fff");
                 setColorTextUA("#000");
+                i18n.changeLanguage("en");
               }}
               className={classes.lang_button}
               style={{ backgroundColor: colorEN, color: colorTextEN }}
@@ -120,11 +120,11 @@ const Header = ({ refs }) => {
             </button>
             <button
               onClick={() => {
-                i18n.changeLanguage("ua");
                 setColorEN("#D3D3D3");
                 setColorUA("#6275f6");
                 setColorTextEN("#000");
                 setColorTextUA("#fff");
+                i18n.changeLanguage("ua");
               }}
               className={classes.lang_button + " " + classes.ua}
               style={{ backgroundColor: colorUA, color: colorTextUA }}

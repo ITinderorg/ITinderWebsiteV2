@@ -52,15 +52,18 @@
   }
 }
 
-@media (max-width: 1355px) {
+@media (max-width: 1426px) {
   .text_collapse {
     display: none;
   }
   .born_ukraine {
     margin-left: 25px;
   }
+  .nav_button {
+    margin-left: 5px;
+  }
 }
-@media (max-width: 1167px) {
+@media (max-width: 1202px) {
   .text_collapse_2 {
     display: none;
   }
@@ -129,7 +132,7 @@
   height: 44px;
   border: 0;
   border-radius: 5px 0px 0px 5px;
-  transition: all 0.5s;
+  transition: all 0.7s;
 }
 .lang_button + .ua {
   color: #fff;
