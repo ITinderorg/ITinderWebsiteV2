@@ -56,6 +56,8 @@
   border-radius: 9px;
   color: #ffff;
   padding: 15px 21px !important;
+  width: 122px;
+  text-align: center;
 
   font-weight: 700;
   font-size: 15px;
@@ -161,7 +163,6 @@
   .text_section {
     height: 300px;
     margin-top: 40px;
-    margin-bottom: 50px;
     justify-content: flex-start !important;
     h3 {
       font-size: 16px;
@@ -179,6 +180,8 @@
   .start_button {
     font-size: 12px;
     line-height: 18px;
+    padding: 15px 12px !important;
+    width: 99px;
   }
 
   .info_button {
