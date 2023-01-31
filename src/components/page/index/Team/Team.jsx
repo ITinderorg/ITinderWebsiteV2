@@ -143,7 +143,7 @@ const Team = () => {
                 width={255}
               />
               <h3>{t("Ustym Manko")}</h3>
-              <p>Sales</p>
+              <p>CBDO</p>
               <a
                 href="https://www.linkedin.com/in/ustymmanko/"
                 target="_blank"
