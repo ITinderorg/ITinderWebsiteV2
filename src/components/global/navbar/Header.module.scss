@@ -64,6 +64,9 @@
   .nav_button {
     margin-left: 10px;
   }
+  .lang_button {
+    height: 41px !important;
+  }
 }
 @media (max-width: 1212px) {
   .text_collapse_2 {
@@ -82,7 +85,7 @@
     width: 88px;
   }
   .lang_button {
-    height: 34px !important;
+    height: 41px !important;
     font-size: 11px !important;
   }
 }
@@ -98,6 +101,9 @@
 
     font-size: 11px;
     width: 87px;
+  }
+  .lang_button {
+    height: 34px !important;
   }
   .logo {
     width: 125px;

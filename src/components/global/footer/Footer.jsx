@@ -23,7 +23,7 @@ const Footer = () => {
           >
             <Col className="d-flex justify-content-center">
               <a
-                href="https://www.instagram.com/itinder_ua/"
+                href="https://www.instagram.com/itinder.tech/"
                 target="_blank"
                 rel="noreferrer"
               >
