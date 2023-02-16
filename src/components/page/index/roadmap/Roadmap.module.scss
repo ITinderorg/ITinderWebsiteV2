@@ -1,11 +1,15 @@
 .container {
   margin-top: 100px;
 }
-.image {
+
+.image_container {
   height: 659px;
-  width: 1057px;
-  margin: 0 auto;
-  z-index: 1;
+  position: relative;
+
+  .image {
+    z-index: 1;
+    object-fit: contain;
+  }
 }
 
 .title_container {
@@ -33,9 +37,8 @@
       font-size: 15px;
     }
   }
-  .image {
-    height: auto;
-    width: auto;
+  .image_container {
+    height: 500px;
   }
 }
 @media (max-width: 1078px) {
@@ -46,5 +49,10 @@
     p {
       font-size: 13px;
     }
+  }
+}
+@media (max-width: 678px) {
+  .image_container {
+    height: 300px;
   }
 }

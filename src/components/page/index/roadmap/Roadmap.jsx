@@ -19,14 +19,13 @@ const Roadmap = () => {
           )}
         </p>
       </Row>
-      <Row>
+      <Row className={classes.image_container}>
         <Image
           src={Img.src}
           className={classes.image}
           loading="lazy"
           alt="ITinder roadmap"
-          height={989}
-          width={1586}
+          fill
         />
       </Row>
     </Container>
