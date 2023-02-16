@@ -2,6 +2,7 @@ import classes from "./Comments.module.scss";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Image from "next/image";
 
 import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -54,11 +55,13 @@ const Comments = () => {
               ”
             </p>
             <div className={classes.commentor}>
-              <img
+              <Image
                 src={Comment1Img.src}
                 className={classes.commentor_photo}
                 loading="lazy"
-                alt="Reviewer 1"
+                alt="ITinder SMM manager Maria T."
+                width={47}
+                height={47}
               />
               <div>
                 <p className={classes.commentor_name}>{t("Maria T.")}</p>
@@ -83,11 +86,13 @@ const Comments = () => {
               ”
             </p>
             <div className={classes.commentor}>
-              <img
+              <Image
                 src={Comment2Img.src}
                 className={classes.commentor_photo}
                 loading="lazy"
-                alt="Reviewer 2"
+                alt="ITinder IT Researcher Evgenia Syniavska"
+                width={47}
+                height={47}
               />
               <div>
                 <p className={classes.commentor_name}>
@@ -114,11 +119,13 @@ const Comments = () => {
               ”
             </p>
             <div className={classes.commentor}>
-              <img
+              <Image
                 src={Comment3Img.src}
                 className={classes.commentor_photo}
                 loading="lazy"
-                alt="Reviewer 3"
+                alt="ITinder Project manager Yel Malichenko"
+                width={47}
+                height={47}
               />
               <div>
                 <p className={classes.commentor_name}>{t("Yel Malichenko")}</p>
@@ -143,11 +150,13 @@ const Comments = () => {
               ”
             </p>
             <div className={classes.commentor}>
-              <img
+              <Image
                 src={Comment4Img.src}
                 className={classes.commentor_photo}
                 loading="lazy"
-                alt="Reviewer 4"
+                alt="ITinder Elizabeth Zhyrova Recruitment Researcher"
+                width={47}
+                height={47}
               />
               <div>
                 <p className={classes.commentor_name}>
@@ -176,11 +185,13 @@ const Comments = () => {
               ”
             </p>
             <div className={classes.commentor}>
-              <img
+              <Image
                 src={Comment5Img.src}
                 className={classes.commentor_photo}
                 loading="lazy"
-                alt="Reviewer 5"
+                alt="ITinder Yana Martyniuk IT Recruiter"
+                width={47}
+                height={47}
               />
               <div>
                 <p className={classes.commentor_name}>{t("Yana Martyniuk")}</p>
@@ -205,11 +216,14 @@ const Comments = () => {
               ”
             </p>
             <div className={classes.commentor}>
-              <img
+              <Image
                 src={Comment6Img.src}
                 className={classes.commentor_photo}
                 loading="lazy"
-                alt="Reviewer 6"
+                alt="ITinder Senior .NET Software Engineer Sergiy Khomchenko"
+                width={47}
+                height={47}
+                quality={75}
               />
               <div>
                 <p className={classes.commentor_name}>
