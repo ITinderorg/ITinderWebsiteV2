@@ -89,44 +89,57 @@ const Comments = () => {
 
       <Row className={classes.comments_container}>
         <Swiper
-          spaceBetween={50}
-          slidesPerView={3}
+          slidesPerView={"auto"}
           pagination={{
             clickable: true,
           }}
           loop={true}
           modules={[Pagination, Navigation]}
           className={classes.swiper}
+          breakpoints={{
+            // when window width is >= 1124px
+            1124: {
+              spaceBetween: 30,
+              slidesPerView: 3,
+            },
+            // when window width is >= 1524px
+            1524: {
+              spaceBetween: 50,
+              slidesPerView: 3,
+            },
+          }}
         >
           {comments.map((item, index) => {
             return (
-              <SwiperSlide className={classes.swiper_slide} key={index}>
-                <div className={classes.stars}>
-                  {item.stars.map((star, index) => {
-                    return star == 1 ? (
-                      <FullStar className={classes.star} key={index} />
-                    ) : star == 0.5 ? (
-                      <HalfStar className={classes.star} key={index} />
-                    ) : (
-                      <EmptyStar className={classes.star} key={index} />
-                    );
-                  })}
-                </div>
-                <p className={classes.comment_text}>“{item.text}”</p>
-                <div className={classes.commentor}>
-                  <Image
-                    src={item.photo}
-                    className={classes.commentor_photo}
-                    loading="lazy"
-                    alt={"ITinder " + item.name}
-                    width={47}
-                    height={47}
-                  />
-                  <div>
-                    <p className={classes.commentor_name}>{item.name}</p>
-                    <p className={classes.commentor_position}>
-                      {item.position}
-                    </p>
+              <SwiperSlide className={classes.slide_container} key={index}>
+                <div className={classes.swiper_slide}>
+                  <div className={classes.stars}>
+                    {item.stars.map((star, index) => {
+                      return star == 1 ? (
+                        <FullStar className={classes.star} key={index} />
+                      ) : star == 0.5 ? (
+                        <HalfStar className={classes.star} key={index} />
+                      ) : (
+                        <EmptyStar className={classes.star} key={index} />
+                      );
+                    })}
+                  </div>
+                  <p className={classes.comment_text}>“{item.text}”</p>
+                  <div className={classes.commentor}>
+                    <Image
+                      src={item.photo}
+                      className={classes.commentor_photo}
+                      loading="lazy"
+                      alt={"ITinder " + item.name}
+                      width={47}
+                      height={47}
+                    />
+                    <div>
+                      <p className={classes.commentor_name}>{item.name}</p>
+                      <p className={classes.commentor_position}>
+                        {item.position}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>
