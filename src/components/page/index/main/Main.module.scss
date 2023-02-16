@@ -29,17 +29,19 @@
   margin: 50px 80px 50px 243px !important;
 }
 
+.image {
+  margin: 0 auto;
+  object-fit: contain;
+}
+
 .dots {
   position: absolute;
   z-index: -1;
-  top: 100px;
-  right: 30%;
+  top: 0px;
+  right: 50%;
 }
-
-.image {
-  height: 514px;
-  width: 615px;
-  margin: 0 auto;
+.image_container {
+  position: relative;
 }
 
 .buttons_container {
@@ -86,10 +88,6 @@
   .container {
     margin: 50px 123px !important;
   }
-  .image {
-    height: 449px;
-    width: 545px;
-  }
 }
 
 @media (max-width: 1260px) {
@@ -110,10 +108,6 @@
   .dots {
     right: 25%;
   }
-  .image {
-    height: 416px;
-    width: 505px;
-  }
 }
 
 @media (max-width: 1020px) {
@@ -121,20 +115,15 @@
     right: 15%;
     top: 120px;
   }
-  .image {
-    height: 400px;
-    width: 485px;
-  }
 }
 
 @media (max-width: 992px) {
-  .dots {
-    right: 15%;
-    top: 120px;
+  .image_container {
+    height: 400px;
   }
-  .image {
-    height: 433px;
-    width: 525px;
+  .dots {
+    right: 0%;
+    top: -335px;
   }
   .text_section {
     h3 {
@@ -152,10 +141,6 @@
 @media (max-width: 680px) {
   .image_container {
     padding-left: 0px;
-  }
-  .image {
-    height: 280px;
-    width: 340px;
   }
   .container {
     margin: 0px 43px !important;
@@ -193,10 +178,6 @@
 @media (max-width: 425px) {
   .container {
     margin: 0px 23px !important;
-  }
-  .image {
-    height: 255px;
-    width: 310px;
   }
   .text_section {
     margin-bottom: 80px;

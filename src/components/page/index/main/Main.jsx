@@ -52,8 +52,7 @@ const Main = ({ secRef }) => {
             src={Img.src}
             className={classes.image}
             alt="What can ITinder bot do?"
-            height={1158}
-            width={1406}
+            fill
             priority
           />
           <Image
