@@ -13,9 +13,9 @@ const Footer = () => {
         <Row className="justify-content-center">
           <Col
             lg={2}
-            md={2}
-            sm={4}
-            xs={4}
+            md={4}
+            sm={5}
+            xs={7}
             className={
               "d-flex justify-content-center align-items-center align-self-center " +
               classes.social_link
