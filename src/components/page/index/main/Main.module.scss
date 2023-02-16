@@ -165,12 +165,12 @@
   .start_button {
     font-size: 12px;
     line-height: 18px;
-    padding: 15px 12px !important;
+    padding: 15px 5px !important;
     width: 99px;
   }
 
   .info_button {
-    font-size: 12px;
+    font-size: 12px !important;
     line-height: 18px;
   }
 }
@@ -181,5 +181,8 @@
   }
   .text_section {
     margin-bottom: 80px;
+  }
+  .info_button {
+    padding: 13px 10px !important;
   }
 }

@@ -26,6 +26,7 @@ const Roadmap = () => {
           loading="lazy"
           alt="ITinder roadmap"
           fill
+          quality={50}
         />
       </Row>
     </Container>
