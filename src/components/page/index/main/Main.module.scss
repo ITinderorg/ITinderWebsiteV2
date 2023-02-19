@@ -2,7 +2,7 @@
   height: 500px;
   flex-direction: column;
 
-  h3 {
+  .title {
     color: #6275f6;
     font-weight: 700;
     font-size: 32px;
@@ -92,7 +92,7 @@
 
 @media (max-width: 1260px) {
   .text_section {
-    h3 {
+    .title {
       font-size: 30px;
     }
     h1 {
@@ -126,7 +126,7 @@
     top: -335px;
   }
   .text_section {
-    h3 {
+    .title {
       font-size: 26px;
     }
     h1 {
@@ -149,7 +149,7 @@
     height: 300px;
     margin-top: 40px;
     justify-content: flex-start !important;
-    h3 {
+    .title {
       font-size: 18px;
       line-height: 9px;
     }

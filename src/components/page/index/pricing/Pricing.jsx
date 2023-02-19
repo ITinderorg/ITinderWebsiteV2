@@ -12,16 +12,19 @@ const Pricing = () => {
       id: 0,
       name: "Annual",
       price: "$108",
+      save: "Save up $72",
     },
     {
       id: 1,
       name: "6 month",
       price: "$66",
+      save: "Save up $24",
     },
     {
       id: 2,
       name: "3 month",
       price: "$36",
+      save: "Save up $9",
     },
     {
       id: 3,
@@ -29,6 +32,24 @@ const Pricing = () => {
       price: "$15",
     },
   ];
+
+  /*
+  <Row className={"text-center " + classes.desc_title_container}>
+          <h3>{t("What you get purchasing this subscription")}</h3>
+        </Row>
+        <Row className="d-flex justify-content-center mt-4">
+          <Row className={classes.desc_container}>
+            <ul>
+              <li>{t("Full access to ITinder bot")}</li>
+              <li>{t("Exclusive access to recruiters community")}</li>
+              <li>{t("You can create up to 10 vacancies")}</li>
+              <li>{t("Unlimited matches with candidates")}</li>
+              <li>{t("24/7 support from us")}</li>
+            </ul>
+          </Row>
+        </Row>
+  */
+
   return (
     <>
       <Container className={classes.container}>
@@ -51,7 +72,17 @@ const Pricing = () => {
                 className={classes.item_container}
               >
                 <p className={classes.item_title}>{t(item.name)}</p>
-                <p className={classes.item_price}>{item.price}</p>
+                <div
+                  className="d-flex flex-column justify-content-center"
+                  style={{ height: 86 }}
+                >
+                  <p className={classes.item_price}>{item.price}</p>
+                  {item.save != undefined ? (
+                    <p className={classes.item_save}>{t(item.save)}</p>
+                  ) : (
+                    <></>
+                  )}
+                </div>
               </Col>
             );
           })}

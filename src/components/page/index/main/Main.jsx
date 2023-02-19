@@ -20,7 +20,7 @@ const Main = ({ secRef }) => {
           sm={12}
           className={classes.text_section + " d-flex justify-content-center"}
         >
-          <h3>ITinder-bot</h3>
+          <p className={classes.title}>ITinder-bot</p>
           <h1>{t("Quickly find your \nperfect position match in IT")}</h1>
           <p>
             {t(

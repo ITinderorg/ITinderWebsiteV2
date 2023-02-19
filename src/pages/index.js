@@ -44,7 +44,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>ITinder</title>
+        <title>ITinder - quick job search in IT</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
