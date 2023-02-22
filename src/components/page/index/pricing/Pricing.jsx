@@ -1,9 +1,12 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Collapse from "react-bootstrap/Collapse";
+import Accordion from "react-bootstrap/Accordion";
 import classes from "./Pricing.module.scss";
 
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 const Pricing = () => {
   const { t, i18n } = useTranslation();
@@ -33,22 +36,34 @@ const Pricing = () => {
     },
   ];
 
-  /*
-  <Row className={"text-center " + classes.desc_title_container}>
-          <h3>{t("What you get purchasing this subscription")}</h3>
-        </Row>
-        <Row className="d-flex justify-content-center mt-4">
-          <Row className={classes.desc_container}>
-            <ul>
-              <li>{t("Full access to ITinder bot")}</li>
-              <li>{t("Exclusive access to recruiters community")}</li>
-              <li>{t("You can create up to 10 vacancies")}</li>
-              <li>{t("Unlimited matches with candidates")}</li>
-              <li>{t("24/7 support from us")}</li>
-            </ul>
-          </Row>
-        </Row>
-  */
+  const [open1, setOpen1] = useState(false);
+  const [open2, setOpen2] = useState(false);
+  const [open3, setOpen3] = useState(false);
+  const [open4, setOpen4] = useState(false);
+  const [open5, setOpen5] = useState(false);
+
+  const benefits = [
+    {
+      header: "Full access to ITinder bot",
+      text: "Unlimited access to ITinder bot where thousands of candidates are awaiting for you in just few clicks.",
+    },
+    {
+      header: "Exclusive access to recruiters community",
+      text: "Access to recruiter's community chat with best recruiters practices, tips, ultimate networking and troubleshooting. There are also webinars with community leaders awaiting for you there.",
+    },
+    {
+      header: "You can create up to 10 vacancies",
+      text: "You can create up to 10 vacancies, which gives a high level of automation of sourcing process equivalent to an almost month of your life.",
+    },
+    {
+      header: "Unlimited matches with candidates",
+      text: "Get unlimited matches with candidates, which means you can acquire professionals anywhere and anytime.",
+    },
+    {
+      header: "24/7 support from us",
+      text: "Be supported 24/7 with our team in any case or question you have in regard of our system. We are always here for you.",
+    },
+  ];
 
   return (
     <>
@@ -97,6 +112,36 @@ const Pricing = () => {
               {t("Contact Us")}
             </a>
           </Col>
+        </Row>
+
+        <Row className={"text-center " + classes.desc_title_container}>
+          <h3>{t("What is included in the subscription")}</h3>
+        </Row>
+        <Row className="d-flex justify-content-center mt-4">
+          <Row className={classes.desc_container}>
+            <Accordion
+              defaultActiveKey="0"
+              className={classes.accordition}
+              flush
+            >
+              {benefits.map((item, index) => {
+                return (
+                  <Accordion.Item
+                    eventKey={index}
+                    key={index}
+                    className={classes.accordition_item}
+                  >
+                    <Accordion.Header className={classes.accordition_header}>
+                      {t(item.header)}
+                    </Accordion.Header>
+                    <Accordion.Body className={classes.collapse_container}>
+                      {t(item.text)}
+                    </Accordion.Body>
+                  </Accordion.Item>
+                );
+              })}
+            </Accordion>
+          </Row>
         </Row>
       </Container>
     </>

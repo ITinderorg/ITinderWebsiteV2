@@ -116,15 +116,81 @@
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 8px 21px 8px rgba(56, 61, 71, 0.08);
+  padding: 0px !important;
 
   ul {
     list-style: none;
     text-align: left;
-    padding: 0px 50px;
+    padding: 0px !important;
+    margin: 0px !important;
 
     li {
       font-size: 24px;
-      margin: 40px 0px;
+      padding: 30px 40px;
+      transition: all 0.3s;
+      cursor: pointer;
+      //color: #6275f6;
+      font-weight: 600;
+
+      &:first-of-type {
+        border-radius: 10px 10px 0px 0px;
+      }
+      &:last-of-type {
+        border-radius: 0px 0px 10px 10px;
+      }
+      &:hover {
+        background-color: #dbdbdb;
+      }
+    }
+
+    .collapse_container {
+      padding: 0px 40px;
+      margin: 10px 0px;
+    }
+  }
+
+  .accordition {
+    list-style: none;
+    text-align: left;
+    padding: 0px !important;
+    margin: 0px !important;
+
+    .accordition_item {
+      transition: all 0.3s;
+      cursor: pointer;
+      border-bottom: none;
+      //color: #6275f6;
+
+      .accordition_header {
+        button {
+          padding: 30px 40px;
+          font-size: 24px;
+          background-color: transparent;
+
+          &:not(.collapsed) {
+            color: black !important;
+          }
+          &:focus {
+            border: none !important;
+            box-shadow: none !important;
+          }
+        }
+      }
+
+      &:first-of-type {
+        border-radius: 10px 10px 0px 0px;
+      }
+      &:last-of-type {
+        border-radius: 0px 0px 10px 10px;
+      }
+      &:hover {
+        background-color: #dbdbdb;
+      }
+
+      .collapse_container {
+        background-color: #fff;
+        padding: 16px 40px;
+      }
     }
   }
 }
