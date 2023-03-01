@@ -118,7 +118,7 @@ const Pricing = () => {
           <h3>{t("What is included in the subscription")}</h3>
         </Row>
         <Row className="d-flex justify-content-center mt-4">
-          <Row className={classes.desc_container}>
+          <Col lg={6} className={classes.desc_container}>
             <Accordion
               defaultActiveKey="0"
               className={classes.accordition}
@@ -141,7 +141,7 @@ const Pricing = () => {
                 );
               })}
             </Accordion>
-          </Row>
+          </Col>
         </Row>
       </Container>
     </>
