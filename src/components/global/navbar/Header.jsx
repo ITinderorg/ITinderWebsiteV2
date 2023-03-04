@@ -1,5 +1,6 @@
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
+import Collapse from "react-bootstrap/Collapse";
 import Nav from "react-bootstrap/Nav";
 import Logo from "../../../assets/images/logowithtext.svg";
 import Image from "next/image";
@@ -10,10 +11,7 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 
 const Header = ({ refs }) => {
-  let [colorEN, setColorEN] = useState("#6275f6");
-  let [colorUA, setColorUA] = useState("#D3D3D3");
-  let [colorTextEN, setColorTextEN] = useState("#fff");
-  let [colorTextUA, setColorTextUA] = useState("#000");
+  const [open, setOpen] = useState(false);
   const { t, i18n } = useTranslation();
 
   const scrollToSection = (e, elementRef) => {
@@ -103,35 +101,37 @@ const Header = ({ refs }) => {
             href="/"
             onClick={(e) => {
               e.preventDefault();
+              setOpen(!open);
             }}
+            aria-controls="example-collapse-text"
+            aria-expanded={open}
+            className={classes.language_selector}
           >
-            <button
-              onClick={() => {
-                setColorEN("#6275f6");
-                setColorUA("#D3D3D3");
-                setColorTextEN("#fff");
-                setColorTextUA("#000");
-                i18n.changeLanguage("en");
-              }}
-              className={classes.lang_button}
-              style={{ backgroundColor: colorEN, color: colorTextEN }}
-            >
-              EN
-            </button>
-            <button
-              onClick={() => {
-                setColorEN("#D3D3D3");
-                setColorUA("#6275f6");
-                setColorTextEN("#000");
-                setColorTextUA("#fff");
-                i18n.changeLanguage("ua");
-              }}
-              className={classes.lang_button + " " + classes.ua}
-              style={{ backgroundColor: colorUA, color: colorTextUA }}
-            >
-              UA
-            </button>
+            {t("Language")}
           </Nav.Link>
+          <Collapse in={open}>
+            <div id="example-collapse-text" className={classes.languages}>
+              <button
+                className={classes.lang_button}
+                onClick={(e) => {
+                  e.preventDefault();
+                  i18n.changeLanguage("ua");
+                }}
+              >
+                <div className={classes.flag_ua} />
+              </button>
+              <button
+                className={classes.lang_button}
+                onClick={(e) => {
+                  e.preventDefault();
+                  i18n.changeLanguage("en");
+                }}
+              >
+                <div className={classes.flag_us} />
+              </button>
+            </div>
+          </Collapse>
+
           <Nav.Link
             href="https://t.me/ITinder_jobs_bot"
             className={"p-sm-2 " + classes.nav_button}
